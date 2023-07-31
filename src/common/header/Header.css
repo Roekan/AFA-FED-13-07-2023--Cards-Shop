@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "magic-font";
+    src: url("../../public/fonts/magic.ttf");
+}
+
+.title-header{
+    font-family: magic-font;
+    font-size: 2rem;
+    color: red;
+}

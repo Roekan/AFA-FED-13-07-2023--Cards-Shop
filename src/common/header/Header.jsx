@@ -1,13 +1,14 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import './Header.css'
 
 export const Header = () => {
   return (
     <>
     <Container fluid>
       <Row className=' bg-dark py-2 px-1'>
-        <Col className='d-flex align-items-center justify-content-center bg-info' xs={2}>
-        Header
+        <Col className='d-flex align-items-center justify-content-center bg-info title-header' xs={2}>
+        Magic Traders
         </Col>
         <Col className='d-flex align-items-center justify-content-center bg-success' xs={10}>
           <Row>

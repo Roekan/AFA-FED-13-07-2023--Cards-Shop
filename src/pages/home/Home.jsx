@@ -25,13 +25,17 @@ useEffect(()=>{
     <>
     <Container fluid className='d-flex align-items-center justify-content-center bg-warning box-home'>
       <Row>
-        <Col className='bg-danger'>
+        
         {cards.map((card)=>{
           return (
-            <MagicCard key={card.id} name={card.name} color={card.color} type={card.type} image={card.imageUrl} /> 
+            <>
+            <Col className='bg-danger'>
+              <MagicCard key={card.id} name={card.name} colors={card.colors} type={card.type} image={card.imageUrl} /> 
+            </Col>
+            </>
           )
         })}
-        </Col>
+        
       </Row>
     </Container>
     </>

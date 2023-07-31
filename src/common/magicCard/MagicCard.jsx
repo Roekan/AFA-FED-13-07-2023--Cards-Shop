@@ -12,9 +12,6 @@ export const MagicCard = ({name, colors, type, image}) => {
         : <Card.Img variant="top" src={'./../../public/images/no-image.jpg'} />
         }
 
-      
-
-
       <Card.Body>
         <Card.Title>{name}</Card.Title>
             {

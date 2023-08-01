@@ -28,11 +28,9 @@ useEffect(()=>{
         
         {cards.map((card)=>{
           return (
-            <>
-            <Col className='bg-danger m-1 p-1 d-flex align-items-center justify-content-center'>
-              <MagicCard key={card.id} name={card.name} colors={card.colors} type={card.type} image={card.imageUrl} /> 
+            <Col key={card.id} className='bg-danger m-1 p-1 d-flex align-items-center justify-content-center'>
+              <MagicCard  name={card.name} colors={card.colors} type={card.type} image={card.imageUrl} /> 
             </Col>
-            </>
           )
         })}
         

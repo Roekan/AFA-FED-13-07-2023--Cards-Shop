@@ -3,8 +3,63 @@
     src: url("../../public/fonts/magic.ttf");
 }
 
-.title-header{
-    font-family: magic-font;
-    font-size: 2rem;
-    color: red;
+
+
+.link-header path{
+    fill: #999;
+    transition: all 0.6s;
+}
+
+.link-header path:hover{
+    fill: #fff;
+    transition: all 0.6s;
+}
+
+.nav-link{
+    border:3px solid #999;
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.6s;
+}
+
+.nav-link:hover{
+    border:3px solid #fff;
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.6s;
+}
+
+.icon-header svg{
+    width: 1.8rem;
+}
+
+.icon-header path{
+    fill:#999;
+    transition: all 0.6s;
+}
+
+.icon-header path:hover{
+    fill:#fff;
+    transition: all 0.6s;
+}
+
+.navbar-toggler{
+    background-color: #999!important;
+        transition: all 0.6s;
+}
+
+.navbar-toggler:hover{
+    background-color: #fff!important;
+        transition: all 0.6s;
+}
+
+
+@media (max-width: 991px){
+    .link-header path{
+        width: 1.rem;
+        fill:#999;
+        transition: all 0.6s;
+    }
 }

@@ -1,3 +1,7 @@
+.box-magiccards{
+    z-index: 2;
+}
+
 .img-color-magiccard{
     width: 1.2rem;
 }
@@ -8,4 +12,24 @@
 
 .type-magiccard{
     font-size: 0.8rem;
+}
+
+
+
+.info-magiccard {
+    position: relative;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.info-magiccard:after {
+    content:"...";
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0 20px 1px 45px;
+    user-select: none;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#ffffff), color-stop(50%, #ffffff));
 }

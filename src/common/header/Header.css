@@ -3,7 +3,17 @@
     src: url("../../public/fonts/magic.ttf");
 }
 
+.bg-header{
+    background: #333
+}
 
+/* .header-sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999px;
+} */
 
 .link-header path{
     fill: #999;

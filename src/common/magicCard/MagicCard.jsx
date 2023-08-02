@@ -2,11 +2,11 @@ import React from 'react'
 import { Button, Card, Container, Row, Col } from 'react-bootstrap'
 import './MagicCard.css'
 
-export const MagicCard = ({name, colors, type, image}) => {
+export const MagicCard = ({name, colors, type, image, rarity, info}) => {
   return (
     <>
     <Card style={{ width: '18rem' }}>
-        <Container>
+        <Container className='bg-info box-magiccards'>
             <Row className='d-flex align-items-top justify-content-between mt-2'>
                 <Col className='d-flex align-items-top justify-content-start' sm={4}>
                     {image
@@ -17,30 +17,31 @@ export const MagicCard = ({name, colors, type, image}) => {
                 <Col sm={8}>
                         <Col sm={12}><Card.Title className='title-magiccard'>{name}</Card.Title></Col>
                         <Col sm={12}><Card.Text className='type-magiccard'>{type}</Card.Text></Col>
+                        <Col sm={12}><Card.Text className='rarity-magiccard'>{rarity}</Card.Text></Col>
                         <Col sm={12}>
                         {
-                colors.map((color, i)=>{
+                colors && colors.map((color, i)=>{
                     return (
-                        <>
+                        <Col key={i}>
                         {
-                        color == 'W' && <img className='img-color-magiccard' key={i} src="./../../public/images/elements/white.png" /> 
+                        color == 'W' && <img className='img-color-magiccard' src="./../../public/images/elements/white.png" /> 
                         }
                         {
-                        color == 'U' && <img className='img-color-magiccard' key={i} src="./../../public/images/elements/blue.png" /> 
+                        color == 'U' && <img className='img-color-magiccard' src="./../../public/images/elements/blue.png" /> 
                         }
                         {
-                        color == 'G' && <img className='img-color-magiccard' key={i} src="./../../public/images/elements/green.png" /> 
+                        color == 'G' && <img className='img-color-magiccard' src="./../../public/images/elements/green.png" /> 
                         }
                         {
-                        color == 'B' && <img className='img-color-magiccard' key={i} src="./../../public/images/elements/black.png" /> 
+                        color == 'B' && <img className='img-color-magiccard' src="./../../public/images/elements/black.png" /> 
                         }
                         {
-                        color == 'R' && <img className='img-color-magiccard' key={i} src="./../../public/images/elements/red.png" /> 
+                        color == 'R' && <img className='img-color-magiccard' src="./../../public/images/elements/red.png" /> 
                         }
                         {
-                        color == '' && <img className='img-color-magiccard' key={i} src="./../../public/images/elements/no-encontrado.png" /> 
+                        color == '' && <img className='img-color-magiccard' src="./../../public/images/elements/no-encontrado.png" /> 
                         }
-                        </>
+                        </Col>
                     )
                 } )}
                         </Col>
@@ -49,9 +50,8 @@ export const MagicCard = ({name, colors, type, image}) => {
             <Row>
                 <Col>
                 <Card.Body>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    <Card.Text className='info-magiccard'>
+                    {info}
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>

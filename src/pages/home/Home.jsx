@@ -15,6 +15,16 @@ const [input, setInput] = useState("");
 
 // const anchor = useRef(null);
 
+const calculateTotalPages = (res)=>{
+  if(res.headers['total-count']%100==0){
+  return Math.trunc(res.headers['total-count']/100)
+  }else{
+  return Math.trunc(res.headers['total-count']/100)+ 1
+  }
+}
+
+
+
 
 const changeValue = (name) =>{
   setPage(1)
@@ -22,30 +32,30 @@ const changeValue = (name) =>{
 }
 
 useEffect(()=>{
-
   if(input==""){
     bringCardsPagination(page)
     .then((res)=>{
-      setCards(res)
-      setTotalPages();
+      setCards(res.cards)
+      setTotalPages(calculateTotalPages(res));
     })
     .catch((error)=>{
       console.log(`Error en la llamada bringCards: ${error}` )
     })
   }else{
-    setTimeout(() => {
-      bringCardsByName(input)
+    const bringData = setTimeout(() => {
+      bringCardsByName(input, page)
       .then((res)=>{
-        setCards(res)
-        console.log('LLeno')
+        setCards(res.cards)
+        setTotalPages(calculateTotalPages(res));
       })
       .catch((error)=>{
         console.log(`Error en la llamada bringCardsByName: ${error}` )
       })
     }, 500);
+    return () => clearTimeout(bringData)
   }
   
-},[input, page])
+},[page, input])
 
 const cambiarPagina = (pag) => {
   // window.scrollTo({ top: anchor.current.offsetTop, behavior: "smooth" });
@@ -101,7 +111,9 @@ const cambiarPagina = (pag) => {
             cambiarPagina(page + 1);
           }}
         />
-        {/* <Pagination.Last /> */}
+         <Pagination.Last disabled = {page>=totalPages} onClick={() => {
+            cambiarPagina(totalPages);
+          }} />
       </Pagination> 
       </Row>
     </Container>

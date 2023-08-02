@@ -7,32 +7,16 @@ const cards = 'https://api.magicthegathering.io/v1/cards'
 
 
 export const bringCardsPagination = async(page)=>{
-    
-    // console.log(data.cards)
-    const url=`${cards}?page=${page}`;
-
-    const options = {
-        method: 'GET',
-        headers: {
-            'Page-Size': 10,
-            Count:3,
-            'Total-Count':10
-        }
-      };
-
-      const {data} = await axios.request(url, options)
-
-
-    return data.cards
+    const {data, headers} = await axios.get(`${cards}?page=${page}`)
+    return {cards:data.cards, headers}
 }
 
-export const bringCardsByName = async(name)=>{
+
+export const bringCardsByName = async(name, page)=>{
     name.trim()
-    const {data} = await axios.get(`${cards}?name=${name}`)
-    // console.log('bringCardsByName', data)
-    // console.log(`Name: ${name}`)
-    // console.log(`${cards}?name=${name}`)
-    return data.cards
+    const {data, headers} = await axios.get(`${cards}?page=${page}&name=${name}`)
+     console.log('Headers!!!!!!!!!!!!!!!!', headers)
+    return {cards:data.cards, headers}
 }
 
 // export const bringCardsByColor = async(color)=>{

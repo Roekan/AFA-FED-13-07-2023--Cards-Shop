@@ -33,3 +33,8 @@
     user-select: none;
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#ffffff), color-stop(50%, #ffffff));
 }
+
+.img-magiccard{
+    max-height:6rem;
+
+}

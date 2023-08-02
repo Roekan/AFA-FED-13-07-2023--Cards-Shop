@@ -10,8 +10,8 @@ export const MagicCard = ({name, colors, type, image, rarity, info}) => {
             <Row className='d-flex align-items-top justify-content-between mt-2'>
                 <Col className='d-flex align-items-top justify-content-start' sm={4}>
                     {image
-                    ? <Card.Img variant="top" src={image} />
-                    : <Card.Img variant="top" src={'./../../public/images/no-image.jpg'} />
+                    ? <Card.Img className='img-magiccard' variant="top" src={image} />
+                    : <Card.Img className='img-magiccard' variant="top" src={'./../../public/images/no-image.jpg'} />
                     }
                 </Col>
                 <Col sm={8}>
@@ -22,7 +22,7 @@ export const MagicCard = ({name, colors, type, image, rarity, info}) => {
                         {
                 colors && colors.map((color, i)=>{
                     return (
-                        <Col key={i}>
+                        <div className='d-inline p-1 flex-row ' key={i} sm={1}>
                         {
                         color == 'W' && <img className='img-color-magiccard' src="./../../public/images/elements/white.png" /> 
                         }
@@ -41,7 +41,7 @@ export const MagicCard = ({name, colors, type, image, rarity, info}) => {
                         {
                         color == '' && <img className='img-color-magiccard' src="./../../public/images/elements/no-encontrado.png" /> 
                         }
-                        </Col>
+                        </div>
                     )
                 } )}
                         </Col>

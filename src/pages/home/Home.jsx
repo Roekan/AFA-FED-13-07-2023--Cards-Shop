@@ -5,6 +5,7 @@ import './Home.css'
 import { bringCardsPagination, bringCardsByName } from '../../services/apiCalls';
 import { MagicCard } from '../../common/magicCard/MagicCard';
 import { Searcher } from '../../common/searcher/Searcher';
+import { Filter } from '../../common/filter/Filter';
 
 export const Home = () => {
 
@@ -73,15 +74,18 @@ const cambiarPagina = (pag) => {
 
   return (
     <>
-    <Container fluid className='d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-home'>
-      <Row className='d-flex align-items-center bg-success '>
-        <Col className='d-flex justify-content-center bg-danger '>
-        <Searcher changeValue={(e) => changeValue(e)}/>
-        </Col >
-        <Col className='d-flex justify-content-center bg-danger text-info'>
-        AAA
-        </Col>
-      </Row>
+    <Container className='bg-dark box-searcher-home'>
+          <Row className='d-flex align-items-center justify-content-around '>
+            <Col sm={12} lg={6} className='d-flex justify-content-center '>
+            <Searcher changeValue={(e) => changeValue(e)}/>
+            </Col >
+            <Col sm={12} lg={6} className='d-flex justify-content-center text-info'>
+            <Filter />
+            </Col>
+          </Row>
+    </Container>
+
+    <Container fluid className='d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-cards-home'>
       <Row>
         {cards && cards.map((card)=>{
           return (

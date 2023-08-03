@@ -13,6 +13,7 @@ const [cards, setCards] = useState([]);
 const [page, setPage] = useState(1);
 const [totalPages, setTotalPages] = useState(1);
 const [input, setInput] = useState("");
+const [colours, setColours] = useState("b,w,u,r,g");
 
 // const anchor = useRef(null);
 
@@ -32,22 +33,30 @@ const changeValue = (name) =>{
   setInput(name)
 }
 
+const changeColours = (changeColours) =>{
+  setPage(1)
+  setColours(changeColours)
+}
+
 useEffect(()=>{
-  if(input==""){
+  if(input=="" && colours == "b,w,u,r,g"){
     bringCardsPagination(page)
     .then((res)=>{
       setCards(res.cards)
       setTotalPages(calculateTotalPages(res));
+      console.log('AAA')
     })
     .catch((error)=>{
       console.log(`Error en la llamada bringCards: ${error}` )
     })
   }else{
+
     const bringData = setTimeout(() => {
-      bringCardsByName(input, page)
+      bringCardsByName(input,colours, page)
       .then((res)=>{
         setCards(res.cards)
         setTotalPages(calculateTotalPages(res));
+        console.log('BBB')
       })
       .catch((error)=>{
         console.log(`Error en la llamada bringCardsByName: ${error}` )
@@ -56,7 +65,7 @@ useEffect(()=>{
     return () => clearTimeout(bringData)
   }
   
-},[page, input])
+},[page, input, colours])
 
 const cambiarPagina = (pag) => {
   // window.scrollTo({ top: anchor.current.offsetTop, behavior: "smooth" });
@@ -77,10 +86,10 @@ const cambiarPagina = (pag) => {
     <Container className='bg-dark box-searcher-home'>
           <Row className='d-flex align-items-center justify-content-around '>
             <Col sm={12} lg={6} className='d-flex justify-content-center '>
-            <Searcher changeValue={(e) => changeValue(e)}/>
+              <Searcher changeValue={(e) => changeValue(e)}/>
             </Col >
             <Col sm={12} lg={6} className='d-flex justify-content-center text-info'>
-            <Filter />
+              <Filter changeColours={(e) => changeColours(e)}/>
             </Col>
           </Row>
     </Container>
@@ -90,7 +99,7 @@ const cambiarPagina = (pag) => {
         {cards && cards.map((card)=>{
           return (
             <Col key={card.id} className='rounded-2 my-2 d-flex align-items-center justify-content-center box-card-home'>
-              <MagicCard  name={card.name} colors={card.colors} type={card.type} image={card.imageUrl} rarity={card.rarity} info={card.text} /> 
+              <MagicCard id={card.id} name={card.name} colors={card.colors} type={card.type} image={card.imageUrl} rarity={card.rarity} info={card.text} /> 
             </Col>
           )
         })}

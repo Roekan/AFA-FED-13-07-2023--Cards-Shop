@@ -1,0 +1,8 @@
+.title-detail{
+    color: aliceblue;
+}
+
+.box-detail{
+    flex-grow: 1;
+    background-color: #222;
+}

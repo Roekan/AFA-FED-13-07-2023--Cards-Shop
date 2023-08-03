@@ -1,12 +1,13 @@
 import React from 'react'
-import { Button, Card, Container, Row, Col } from 'react-bootstrap'
+import { Link } from "react-router-dom";
+import { Card, Container, Row, Col } from 'react-bootstrap'
 import './MagicCard.css'
 
-export const MagicCard = ({name, colors, type, image, rarity, info}) => {
+export const MagicCard = ({id, name, colors, type, image, rarity, info}) => {
   return (
     <>
-    <Card style={{ width: '18rem' }}>
-        <Container className='bg-info box-magiccards'>
+    <Card className='box-magiccard' style={{ width: '18rem' }}>
+        <Container className='bg-info container-magiccards'>
             <Row className='d-flex align-items-top justify-content-between mt-2'>
                 <Col className='d-flex align-items-top justify-content-start' sm={4}>
                     {image
@@ -38,9 +39,6 @@ export const MagicCard = ({name, colors, type, image, rarity, info}) => {
                         {
                         color == 'R' && <img className='img-color-magiccard' src="./../../public/images/elements/red.png" /> 
                         }
-                        {
-                        color == '' && <img className='img-color-magiccard' src="./../../public/images/elements/no-encontrado.png" /> 
-                        }
                         </div>
                     )
                 } )}
@@ -53,7 +51,7 @@ export const MagicCard = ({name, colors, type, image, rarity, info}) => {
                     <Card.Text className='info-magiccard'>
                     {info}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Link variant="primary" to={`/${id}`}>Ver detalle</Link>
                 </Card.Body>
                 </Col>
             </Row>

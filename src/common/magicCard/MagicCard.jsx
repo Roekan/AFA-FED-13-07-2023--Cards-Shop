@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, Container, Row, Col } from 'react-bootstrap'
 import './MagicCard.css'
 
-export const MagicCard = ({id, name, colors, type, image, rarity, info}) => {
+export const MagicCard = ({id, name, colors, type, image, rarity, info, ...props}) => {
   return (
     <>
     <Card className='box-magiccard' style={{ width: '18rem' }}>

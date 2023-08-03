@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Container, Form, Row, Col } from 'react-bootstrap'
 
 export const Filter = ({changeColours}) => {
@@ -11,11 +11,12 @@ const changeFilter=(e)=>{
     const id=e.target.id
     const value=e.target.checked
     setElements({...elements,[id]:value})
-    const stringColours = Object.keys(elements).filter((color)=>elements[color]).toString()
-    changeColours(stringColours)
 }
 
-
+useEffect(()=>{
+    const stringColours = Object.keys(elements).filter((color)=>elements[color]).toString()
+    changeColours(stringColours)
+},[elements])
 
 
 

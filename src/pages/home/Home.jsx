@@ -99,7 +99,7 @@ const cambiarPagina = (pag) => {
         {cards && cards.map((card)=>{
           return (
             <Col key={card.id} className='rounded-2 my-2 d-flex align-items-center justify-content-center box-card-home'>
-              <MagicCard id={card.id} name={card.name} colors={card.colors} type={card.type} image={card.imageUrl} rarity={card.rarity} info={card.text} /> 
+              <MagicCard id={card.id} name={card.name} colors={card.colors} type={card.type} image={card.imageUrl} rarity={card.rarity} info={card.text} {...card} /> 
             </Col>
           )
         })}
@@ -107,17 +107,41 @@ const cambiarPagina = (pag) => {
       </Row>
       <Row>
         <Pagination>
-        {/* <Pagination.First /> */}
+         <Pagination.First disabled = {page<=1} onClick={() => {
+            cambiarPagina(1);
+          }}/>
         <Pagination.Prev 
           disabled={page <= 1}
           onClick={() => {
             cambiarPagina(page - 1);
                 }}/>
-        {/* <Pagination.Item>{1}</Pagination.Item>
-          <Pagination.Ellipsis /> */}
+
+        <Pagination.Ellipsis /> 
+
+        {page > 1 && (
+                <Pagination.Item
+                  onClick={() => {
+                    cambiarPagina(page - 1);
+                  }}
+                >
+                  {page - 1}
+                </Pagination.Item>
+              )}
+          
         <Pagination.Item active>{page}</Pagination.Item>
-          {/* <Pagination.Ellipsis />
-        <Pagination.Item>{20}</Pagination.Item> */}
+          
+        {page < totalPages && (
+                <Pagination.Item
+                  onClick={() => {
+                    cambiarPagina(page + 1);
+                  }}
+                >
+                  {page + 1}
+                </Pagination.Item>
+              )}
+
+        <Pagination.Ellipsis />
+
         <Pagination.Next 
           disabled={page >= totalPages}
           onClick={() => {

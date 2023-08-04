@@ -1,8 +1,17 @@
-.title-detail{
-    color: aliceblue;
+.box-name-detail{
+    background-color: red;
 }
 
 .box-detail{
     flex-grow: 1;
     background-color: #222;
+}
+
+.text-detail{
+    color:#999;
+        transition: all 0.6s;
+}
+.text-detail:hover{
+    color:#fff;
+        transition: all 0.6s;
 }

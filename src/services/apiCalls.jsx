@@ -9,16 +9,15 @@ export const bringOneCard = async(id)=>{
     return data.card
 }
 
-export const bringCardsPagination = async(page)=>{
-    const {data, headers} = await axios.get(`${cards}?page=${page}`)
-    // console.log('Data cards',data.cards)
-    return {cards:data.cards, headers}
-}
 
 
 export const bringCardsByName = async(name,colors, page)=>{
+
+    const nameParam = name!="" ? `&name=${name}` : ""
+    const colorsParam = colors!="" ? `&colors=${colors}` : ""
+
     name.trim()
-    const {data, headers} = await axios.get(`${cards}?page=${page}&name=${name}&colors=${colors}`)
+    const {data, headers} = await axios.get(`${cards}?page=${page}${nameParam}${colorsParam}`)
     // console.log('Data cards',data.cards)
     return {cards:data.cards, headers}
 }

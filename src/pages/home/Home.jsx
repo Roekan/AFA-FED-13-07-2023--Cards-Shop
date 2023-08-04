@@ -2,7 +2,7 @@ import {useState, useEffect, useRef} from 'react'
 
 import { Col, Container, Row, Pagination } from 'react-bootstrap'
 import './Home.css'
-import { bringCardsPagination, bringCardsByName } from '../../services/apiCalls';
+import { bringCardsByName } from '../../services/apiCalls';
 import { MagicCard } from '../../common/magicCard/MagicCard';
 import { Searcher } from '../../common/searcher/Searcher';
 import { Filter } from '../../common/filter/Filter';
@@ -39,18 +39,6 @@ const changeColours = (changeColours) =>{
 }
 
 useEffect(()=>{
-  if(input=="" && colours == "b,w,u,r,g"){
-    bringCardsPagination(page)
-    .then((res)=>{
-      setCards(res.cards)
-      setTotalPages(calculateTotalPages(res));
-      console.log('AAA')
-    })
-    .catch((error)=>{
-      console.log(`Error en la llamada bringCards: ${error}` )
-    })
-  }else{
-
     const bringData = setTimeout(() => {
       bringCardsByName(input,colours, page)
       .then((res)=>{
@@ -63,7 +51,7 @@ useEffect(()=>{
       })
     }, 500);
     return () => clearTimeout(bringData)
-  }
+  
   
 },[page, input, colours])
 

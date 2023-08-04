@@ -30,7 +30,7 @@ useEffect(()=>{
                         changeFilter(e)
                     }}
                     type="switch"
-                    id="u"
+                    id="b"
                     defaultChecked={true}
                 />
                 <img src='./../../public/images/elements/black.png' width={20} />
@@ -52,7 +52,7 @@ useEffect(()=>{
                         changeFilter(e)
                     }}
                     type="switch"
-                    id="b"
+                    id="u"
                     defaultChecked={true}
                 />
                 <img src='./../../public/images/elements/blue.png' width={20} />

@@ -1,22 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const cardsSlice = createSlice({
-    name: 'cards',
+    name: 'cardsMagic',
     //State
     initialState: {
-      cards: []
+      cardsMagic: []
     },
     reducers: {
-      addCards: (state, action) => {
+      addCardsMagic: (state, action) => {
         return {
           ...state,
-          cards: [...state.cards, action.payload]
+          //action.payload añade el elemento que le pasamos desde Dispatch
+          cardsMagic: action.payload
         }
       }
     }
 });
 
+
+
 //exporto las ACCIONES.....
-export const { addCards } = cardsSlice.actions;
-export const getCards = (state) => state.cards;
+export const { addCardsMagic } = cardsSlice.actions;
+export const getCardsMagic = (state) => state.cardsMagic;
 export default cardsSlice.reducer;

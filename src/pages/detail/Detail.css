@@ -1,10 +1,19 @@
 .box-name-detail{
-    background-color: red;
+    background-color: #;
 }
 
 .box-detail{
     flex-grow: 1;
     background-color: #222;
+}
+
+.title-text-detail{
+    color:#999;
+        transition: all 0.6s;
+}
+.title-text-detail:hover{
+    color:#fff;
+        transition: all 0.6s;
 }
 
 .text-detail{
@@ -14,4 +23,9 @@
 .text-detail:hover{
     color:#fff;
         transition: all 0.6s;
+}
+
+.img-detail{
+    max-width: 223px;
+    max-height: 310px;
 }

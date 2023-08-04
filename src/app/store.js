@@ -13,5 +13,14 @@ const persistConfig = {
 
 //Combinacion de reducers provenientes de las Slices en un solo objeto
 const reducers = combineReducers({
-    favorites: cardsSlice,
+    cardsMagic: cardsSlice,
+});
+
+//Pasamos el reducers a la funcion que nos crea la persistencia de los datos
+const persistedReducer = persistReducer(persistConfig, reducers);
+
+//creamos la store con nuestra configuracion ya aplicada y middleware thunk
+export default configureStore({
+    reducer: persistedReducer,
+    middleware: [thunk]
 });

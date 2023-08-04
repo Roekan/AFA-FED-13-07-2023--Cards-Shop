@@ -1,5 +1,6 @@
-import {useState, useEffect, useRef} from 'react'
-
+import {useState, useEffect} from 'react'
+import { useDispatch } from "react-redux";
+import { addCardsMagic } from '../../reducers/cardsSlice';
 import { Col, Container, Row, Pagination } from 'react-bootstrap'
 import './Home.css'
 import { bringCardsByName } from '../../services/apiCalls';
@@ -14,7 +15,7 @@ const [page, setPage] = useState(1);
 const [totalPages, setTotalPages] = useState(1);
 const [input, setInput] = useState("");
 const [colours, setColours] = useState("b,w,u,r,g");
-
+const dispatch = useDispatch();
 // const anchor = useRef(null);
 
 const calculateTotalPages = (res)=>{
@@ -44,7 +45,7 @@ useEffect(()=>{
       .then((res)=>{
         setCards(res.cards)
         setTotalPages(calculateTotalPages(res));
-        console.log('BBB')
+        dispatch(addCardsMagic(res.cards));
       })
       .catch((error)=>{
         console.log(`Error en la llamada bringCardsByName: ${error}` )

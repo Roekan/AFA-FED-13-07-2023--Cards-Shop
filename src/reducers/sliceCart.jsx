@@ -10,11 +10,11 @@ export const sliceCart = createSlice({
       addProducts: (state, action) => {
         return {
           ...state,
-          productsCart: [...state.favorites, action.payload]
+          productsCart: [...state.productsCart, action.payload]
         }
       },
       deleteProducts: (state, action) => {
-        const stateFilter = state.favorites.filter(element => element.id!=action.payload.id)
+        const stateFilter = state.productsCart.filter(element => element.id!=action.payload.id)
         return {
           ...state,
           productsCart: stateFilter

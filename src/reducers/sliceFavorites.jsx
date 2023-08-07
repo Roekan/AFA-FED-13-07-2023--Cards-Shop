@@ -7,7 +7,7 @@ export const sliceFavorites = createSlice({
       favorites: []
     },
     reducers: {
-      addFavoriteCards: (state, action) => {
+      addFavorites: (state, action) => {
         return {
           ...state,
           favorites: [...state.favorites, action.payload]

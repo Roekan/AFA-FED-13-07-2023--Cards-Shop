@@ -23,8 +23,8 @@ useEffect(()=>{
   return (
     <>
         <Container>
-            <Row>
-                <Col className='d-flex align-items-center justify-content-center'>
+            <Row className='d-flex align-items-center justify-content-center' >
+                <Col sm={12} md={2} className='d-flex align-items-center justify-content-center'>
                 <Form.Check 
                     onChange={(e)=>{
                         changeFilter(e)
@@ -35,7 +35,7 @@ useEffect(()=>{
                 />
                 <img src='./../../public/images/elements/black.png' width={20} />
                 </Col>
-                <Col className='d-flex align-items-center justify-content-center'>
+                <Col sm={12} md={2} className='d-flex align-items-center justify-content-center'>
                 <Form.Check 
                     onChange={(e)=>{
                         changeFilter(e)
@@ -46,7 +46,7 @@ useEffect(()=>{
                 />
                 <img src='./../../public/images/elements/white.png' width={20} />
                 </Col>
-                <Col className='d-flex align-items-center justify-content-center'>
+                <Col sm={12} md={2} className='d-flex align-items-center justify-content-center'>
                 <Form.Check 
                     onChange={(e)=>{
                         changeFilter(e)
@@ -57,7 +57,7 @@ useEffect(()=>{
                 />
                 <img src='./../../public/images/elements/blue.png' width={20} />
                 </Col>
-                <Col className='d-flex align-items-center justify-content-center'>
+                <Col sm={12} md={2} className='d-flex align-items-center justify-content-center'>
                 <Form.Check 
                     onChange={(e)=>{
                         changeFilter(e)
@@ -68,7 +68,7 @@ useEffect(()=>{
                 />
                 <img src='./../../public/images/elements/red.png' width={20} />
                 </Col>
-                <Col className='d-flex align-items-center justify-content-center'>
+                <Col sm={12} md={2} className='d-flex align-items-center justify-content-center'>
                 <Form.Check 
                     onChange={(e)=>{
                         changeFilter(e)

@@ -4,6 +4,8 @@ import { combineReducers } from 'redux';
 import { persistReducer } from 'redux-persist';
 import thunk from 'redux-thunk';
 import cardsSlice from '../reducers/cardsSlice';
+import sliceFavorites from '../reducers/sliceFavorites';
+import sliceCart from '../reducers/sliceCart';
 
 // Persistencia de superestado en local Storage
 const persistConfig = {
@@ -14,6 +16,8 @@ const persistConfig = {
 //Combinacion de reducers provenientes de las Slices en un solo objeto
 const reducers = combineReducers({
     cardsMagic: cardsSlice,
+    favorites: sliceFavorites,
+    productsCart: sliceCart,
 });
 
 //Pasamos el reducers a la funcion que nos crea la persistencia de los datos

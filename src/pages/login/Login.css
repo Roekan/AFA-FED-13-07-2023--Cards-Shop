@@ -1,3 +1,6 @@
+
+
+
 .bg-input-login, .bg-input-login::placeholder{
     background-color: #333;
     color:#999;
@@ -24,3 +27,8 @@
     background-color: #999;
     color:#fff;
 }
+
+.text-login{
+    color: #999;
+}
+

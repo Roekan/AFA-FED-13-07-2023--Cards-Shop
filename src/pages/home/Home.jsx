@@ -34,9 +34,9 @@ const changeValue = (name) =>{
   setInput(name)
 }
 
-const changeColours = (changeColours) =>{
+const changeColours = (changedColours) =>{
   setPage(1)
-  setColours(changeColours)
+  setColours(changedColours)
 }
 
 useEffect(()=>{
@@ -46,6 +46,7 @@ useEffect(()=>{
         setCards(res.cards)
         setTotalPages(calculateTotalPages(res));
         dispatch(addCardsMagic(res.cards));
+        // console.log('Res cards',res.cards)
       })
       .catch((error)=>{
         console.log(`Error en la llamada bringCardsByName: ${error}` )

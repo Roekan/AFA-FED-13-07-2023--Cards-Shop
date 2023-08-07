@@ -20,7 +20,9 @@ export const Detail = () => {
     setLoading(false);
   }, []);
 
-  console.log(card);
+   console.log('Card: ',card);
+
+
 
   return (
     <>
@@ -45,7 +47,7 @@ export const Detail = () => {
                 <Row className="text-detail">
                   <Col className="d-flex align-items-center justify-content-center py-2">
                     <h1 className="align-items-center p-2 title-detail">
-                      {card.foreignNames[1].name}
+                      {card.name}
                     </h1>
                   </Col>
                 </Row>
@@ -153,7 +155,7 @@ export const Detail = () => {
                       className="rounded-4 img-detail"
                       src={
                         card.imageUrl
-                          ? card.foreignNames[1].imageUrl
+                          ? card.imageUrl
                           : "./../../public/images/no-image.jpg"
                       }
                       alt=""
@@ -229,7 +231,7 @@ export const Detail = () => {
                     </Row>
                     <Row>
                       <Col className="d-flex align-items-top justify-content-center pb-4 text-detail">
-                        {card.foreignNames[1].type }
+                        {card.type }
                       </Col>
                     </Row>
                   </Col>
@@ -255,7 +257,7 @@ export const Detail = () => {
                 <Row className="text-detail">
                   <Col className="d-flex align-items-center justify-content-center py-2 text-detail">
                     <p className="align-items-center p-2">
-                      {card.foreignNames[1].text}
+                      {card.text}
                     </p>
                   </Col>
                 </Row>

@@ -7,7 +7,7 @@ export const Header = () => {
     <>
       <Navbar collapseOnSelect expand="lg" className="bg-header header-sticky">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img src='./../../public/images/logo/logo.png' width={70} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav menu-mobile" />

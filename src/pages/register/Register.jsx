@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Nav } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import "./register.css";
@@ -7,9 +7,9 @@ import "./register.css";
 export const Register = () => {
   return (
     <>
-      <Container className="">
+      <Container className="pt-5">
         <Row className="d-flex align-items-center justify-content-center">
-          <Col sm={12} md={6}>
+          <Col sm={12} md={10} lg={6}>
             <InputGroup className="mb-3">
               <InputGroup.Text id="basic-addon1" className="label-register">
                 Usuario
@@ -64,10 +64,30 @@ export const Register = () => {
           </Col>
         </Row>
         <Row className="d-flex align-items-center justify-content-center">
-          <Col sm={12} md={2}>
-            <Button variant="outline-secondary" className=" button-register">
+          <Col
+            className="d-flex align-items-center justify-content-center text-login"
+            sm={12}
+            md={10}
+            lg={6}
+          >
+            <p>
+              Si ya estas registrado puedes loguearte desde &nbsp;
+              <a className="" href="/login" alt="Usuario">
+                aquí
+              </a>
+            </p>
+          </Col>
+        </Row>
+        <Row className="d-flex align-items-center justify-content-center">
+          <Col
+            className="d-flex align-items-center justify-content-center py-4"
+            sm={12}
+            md={10}
+            lg={6}
+          >
+            <Button variant="outline-secondary" className=" button-login">
               Register
-            </Button>{" "}
+            </Button>
           </Col>
         </Row>
       </Container>

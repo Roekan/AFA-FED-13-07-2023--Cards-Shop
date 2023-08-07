@@ -1,5 +1,19 @@
-.box-name-detail{
-    background-color: #;
+.box-btn-back{
+    position: absolute;
+    left: 2rem;
+}
+
+.btn-back{
+    color:#999;
+    background-color: ;
+    border: 2px solid #999;
+    transition: all 0.6s;
+}
+
+.btn-back:hover{
+    color: #fff;
+    transition: all 0.6s;
+    border: 2px solid #fff;
 }
 
 .box-detail{
@@ -8,24 +22,24 @@
 }
 
 .title-text-detail{
-    color:#999;
-        transition: all 0.6s;
-}
-.title-text-detail:hover{
-    color:#fff;
-        transition: all 0.6s;
+    font-size: 1.4rem;
+    color:#ac6b45;
 }
 
+
 .text-detail{
-    color:#999;
-        transition: all 0.6s;
-}
-.text-detail:hover{
-    color:#fff;
-        transition: all 0.6s;
+    color:#e49604;
 }
 
 .img-detail{
     max-width: 223px;
     max-height: 310px;
+}
+
+@media (max-width: 800px){
+    .box-btn-back{
+        position: relative;
+        left: 0rem;
+    }
+    
 }

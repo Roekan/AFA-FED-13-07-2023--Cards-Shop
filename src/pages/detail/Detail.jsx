@@ -33,9 +33,10 @@ export const Detail = () => {
               <Col
                 sm={12}
                 md={1}
-                className="d-flex align-items-top justify-content-center py-3"
+                className="d-flex align-items-top justify-content-center py-3 box-btn-back"
               >
                 <Link
+                className="p-2 rounded btn-back"
                   onClick={() => {
                     navigate(-1);
                   }}

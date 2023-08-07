@@ -8,10 +8,10 @@ import {
   getFavorites,
 } from "./../../reducers/sliceFavorites/";
 import {
-  addProducts,
-  deleteProducts,
-  getProducts,
-} from "./../../reducers/sliceCart/";
+    addProducts,
+    deleteProducts,
+    getProducts,
+  } from "./../../reducers/sliceCart/";
 import "./MagicCard.css";
 
 export const MagicCard = ({
@@ -42,6 +42,7 @@ export const MagicCard = ({
       return false;
     }
   };
+
 
   const addToCart = () => {
     const data = { id, name, colors, type, image, rarity, info, ...props };
@@ -137,15 +138,9 @@ export const MagicCard = ({
                 <Card.Text className=" info-magiccard">{info}</Card.Text>
               </Card.Body>
               <Card.Body>
-                <Link
-                  className="d-flex align-items-center justify-content-center btn-detail py-2 rounded-3"
-                  variant="primary"
-                  to={`/${id}`}
-                >
+                <Link className="d-flex align-items-center justify-content-center btn-detail py-2 rounded-3" variant="primary" to={`/${id}`}>
                   Ver detalle
                 </Link>
-
-
               </Card.Body>
             </Col>
           </Row>
@@ -155,7 +150,7 @@ export const MagicCard = ({
               xs={6}
             >
               <div
-                className=" py-2"
+                className="d-flex justify-content-center alignt-items-center py-2"
                 onClick={() => {
                   addToFavorite();
                 }}
@@ -189,20 +184,21 @@ export const MagicCard = ({
               xs={6}
             >
               <div
-                className=" py-2"
+                className="d-flex justify-content-center alignt-items-center py-2"
                 onClick={() => {
-                  addToCart();
-                }}
+                    addToCart();
+                  }}
               >
                 <svg
-                  className={`${isInCart() ? "add-cart" : "button-cart-img"}`}
+                className={`${
+                    isInCart() ? "add-cart" : "button-cart-img"
+                    }`}
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    fill="#000000"
                     d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zM1 2v2h2l3.6 7.59l-1.35 2.45c-.16.28-.25.61-.25.96c0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2z"
                   ></path>
                 </svg>

@@ -1,0 +1,31 @@
+
+/* .form-check-input {
+    background-image: URL(./../../../public/images/icons/icon-checkbox.png);
+} */
+
+
+.form-check-input:checked{
+    border: 2px solid #999;
+}
+
+.box-filters .form-check-input{
+    background-color: #333;
+    color: red;
+}
+
+
+.filter-black .form-check-input:checked{
+background-color: #3e3e3e;
+}
+.filter-white .form-check-input:checked{
+background-color: #e49604;
+}
+.filter-blue .form-check-input:checked{
+background-color: #264490;
+}
+.filter-red .form-check-input:checked{
+background-color: #7e001e;
+}
+.filter-green .form-check-input:checked{
+background-color: #006633;
+}

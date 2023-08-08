@@ -68,7 +68,7 @@ export const Home = () => {
   return (
     <>
       <Container fluid className="bg-dark box-searcher-home">
-        <Row className="d-flex justify-content-center " >
+        <Row className="d-flex justify-content-center ">
           <Col sm={10}>
             <Row className="d-flex align-items-center justify-content-center ">
               <Col sm={12} lg={4} className="d-flex justify-content-center ">
@@ -85,93 +85,124 @@ export const Home = () => {
           </Col>
         </Row>
       </Container>
-      
-      <Container
-        fluid
-        className="d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-cards-home"
-      >
-        <Row>
-          {cards &&
-            cards.map((card) => {
-              return (
-                <Col
-                  key={card.id}
-                  className="rounded-2 my-2 d-flex align-items-center justify-content-center box-card-home"
-                >
-                  <MagicCard
-                    id={card.id}
-                    name={card.name}
-                    colors={card.colors}
-                    type={card.type}
-                    image={card.imageUrl}
-                    rarity={card.rarity}
-                    info={card.text}
-                    {...card}
-                  />
-                </Col>
-              );
-            })}
-        </Row>
-        <Row>
-          <Pagination className="mt-4 p-2 box-pagination-home">
-            <Pagination.First
-            className="pagination-button-home"
-              disabled={page <= 1}
-              onClick={() => {
-                cambiarPagina(1);
-              }}
-            />
-            <Pagination.Prev
-            className="pagination-button-home"
-              disabled={page <= 1}
-              onClick={() => {
-                cambiarPagina(page - 1);
-              }}
-            />
 
-            <Pagination.Ellipsis />
+      {!loading && cards && (
+        <>
+          <Container
+            fluid
+            className="d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-cards-home"
+          >
+            <Row>
+              {cards &&
+                cards.map((card) => {
+                  return (
+                    <Col
+                      key={card.id}
+                      className="rounded-2 my-2 d-flex align-items-center justify-content-center box-card-home"
+                    >
+                      <MagicCard
+                        id={card.id}
+                        name={card.name}
+                        colors={card.colors}
+                        type={card.type}
+                        image={card.imageUrl}
+                        rarity={card.rarity}
+                        info={card.text}
+                        {...card}
+                      />
+                    </Col>
+                  );
+                })}
+            </Row>
+            <Row>
+              <Pagination className="mt-4 p-2 box-pagination-home">
+                <Pagination.First
+                  className="pagination-button-home"
+                  disabled={page <= 1}
+                  onClick={() => {
+                    cambiarPagina(1);
+                  }}
+                />
+                <Pagination.Prev
+                  className="pagination-button-home"
+                  disabled={page <= 1}
+                  onClick={() => {
+                    cambiarPagina(page - 1);
+                  }}
+                />
 
-            {page > 1 && (
-              <Pagination.Item
-                onClick={() => {
-                  cambiarPagina(page - 1);
-                }}
-              >
-                {page - 1}
-              </Pagination.Item>
-            )}
+                <Pagination.Ellipsis />
 
-            <Pagination.Item active>{page}</Pagination.Item>
+                {page > 1 && (
+                  <Pagination.Item
+                    onClick={() => {
+                      cambiarPagina(page - 1);
+                    }}
+                  >
+                    {page - 1}
+                  </Pagination.Item>
+                )}
 
-            {page < totalPages && (
-              <Pagination.Item
-                onClick={() => {
-                  cambiarPagina(page + 1);
-                }}
-              >
-                {page + 1}
-              </Pagination.Item>
-            )}
+                <Pagination.Item active>{page}</Pagination.Item>
 
-            <Pagination.Ellipsis />
+                {page < totalPages && (
+                  <Pagination.Item
+                    onClick={() => {
+                      cambiarPagina(page + 1);
+                    }}
+                  >
+                    {page + 1}
+                  </Pagination.Item>
+                )}
 
-            <Pagination.Next
-              className="pagination-button-home"
-              disabled={page >= totalPages}
-              onClick={() => {
-                cambiarPagina(page + 1);
-              }}
-            />
-            <Pagination.Last
-              className="pagination-button-home"
-              disabled={page >= totalPages}
-              onClick={() => {
-                cambiarPagina(totalPages);
-              }}
-            />
-          </Pagination>
-        </Row>
-      </Container>
+                <Pagination.Ellipsis />
+
+                <Pagination.Next
+                  className="pagination-button-home"
+                  disabled={page >= totalPages}
+                  onClick={() => {
+                    cambiarPagina(page + 1);
+                  }}
+                />
+                <Pagination.Last
+                  className="pagination-button-home"
+                  disabled={page >= totalPages}
+                  onClick={() => {
+                    cambiarPagina(totalPages);
+                  }}
+                />
+              </Pagination>
+            </Row>
+          </Container>
+        </>
+      )}
+
+      {loading && (
+        <Container className="box-detail">
+          <Row className="d-flex align-items-center justify-content-center box-detail p-5">
+            <Col
+              sm={12}
+              className="d-flex align-items-center justify-content-center box-detail "
+            >
+              {
+                <img
+                  className="rounded-4"
+                  src={`./../../public/images/load/load-${Math.trunc(
+                    1 + Math.random() * 8
+                  )}.gif`}
+                  alt="load-img"
+                />
+              }
+            </Col>
+            <Col
+              sm={12}
+              className="d-flex align-items-center justify-content-center box-detail py-2 text-light"
+            >
+              Loading...
+            </Col>
+          </Row>
+        </Container>
+      )}
     </>
   );
 };

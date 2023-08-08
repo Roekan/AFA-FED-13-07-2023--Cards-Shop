@@ -1,0 +1,31 @@
+.bg-input-register, .bg-input-register::placeholder{
+    background-color: #333;
+    color:#999;
+    transition: 0.6s;
+}
+
+.bg-input-register:focus{
+    background-color: #333;
+    color:#fff;
+    transition: 0.6s;
+}
+
+.button-register{
+    background-color: transparent;
+    transition: 0.6s;
+}
+
+.button-register:hover{
+    background-color: #999;
+    transition: 0.6s;
+}
+
+.label-register{
+    background-color: #999;
+    color:#fff;
+}
+
+.text-legal{
+    font-size: 0.8rem;
+    color:#999;
+}

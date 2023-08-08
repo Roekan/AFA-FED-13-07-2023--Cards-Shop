@@ -2,12 +2,7 @@ import axios from "axios";
 
 const cards = 'https://api.magicthegathering.io/v1/cards'
 
-
-
-// export const bringOneCard = async(id)=>{
-//     const {data} = await axios.get(`${cards}/${id}`)
-//     return data.card
-// }
+const API_URL = "http://localhost:3000";
 
 
 
@@ -22,4 +17,16 @@ export const bringCardsByName = async(name,colors, page)=>{
     return {cards:data.cards, headers}
 }
 
-
+export const register = async (body) => {
+    let { data } = await axios.post(`${API_URL}/users`, body);
+    return data;
+  }
+  
+export const users = async () => {
+let { data } = await axios.get(`${API_URL}/users`);
+return data;
+}
+export const user = async (id) => {
+  let { data } = await axios.get(`${API_URL}/users/${id}`);
+  return data;
+  }

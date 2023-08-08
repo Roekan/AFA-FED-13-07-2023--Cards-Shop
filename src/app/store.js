@@ -6,6 +6,7 @@ import thunk from 'redux-thunk';
 import cardsSlice from '../reducers/cardsSlice';
 import sliceFavorites from '../reducers/sliceFavorites';
 import sliceCart from '../reducers/sliceCart';
+import sliceUser from '../reducers/sliceUser';
 
 // Persistencia de superestado en local Storage
 const persistConfig = {
@@ -18,6 +19,7 @@ const reducers = combineReducers({
     cardsMagic: cardsSlice,
     favorites: sliceFavorites,
     productsCart: sliceCart,
+    user: sliceUser,
 });
 
 //Pasamos el reducers a la funcion que nos crea la persistencia de los datos

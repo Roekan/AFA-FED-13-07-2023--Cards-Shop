@@ -57,6 +57,26 @@
     transition: all 0.6s;
 }
 
+.icon-header .left-heart{
+    fill:#999;
+    transition: all 0.6s;
+}
+
+.icon-header .right-heart{
+    fill:#999;
+    transition: all 0.6s;
+}
+
+.icon-header .left-heart:hover{
+    fill:#7e001e;
+    transition: all 0.6s;
+}
+
+.icon-header .right-heart:hover{
+    fill:#3e3e3e;
+    transition: all 0.6s;
+}
+
 .navbar-toggler{
     background-color: #999!important;
     transition: all 0.6s;

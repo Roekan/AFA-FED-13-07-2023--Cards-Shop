@@ -44,7 +44,9 @@
   background-color: #7e001e;
 }
 
-
+.block-info-product{
+    border-left: 2px solid #006633;
+}
 
 @media (max-width: 700px ){
     .btn-detail-cart, .btn-drop-cart{

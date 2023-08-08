@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { addCardsMagic } from "../../reducers/cardsSlice";
+import { getUser } from "../../reducers/sliceUser";
 import { Col, Container, Row, Pagination } from "react-bootstrap";
 import "./Home.css";
 import { bringCardsByName } from "../../services/apiCalls";
@@ -8,7 +10,10 @@ import { MagicCard } from "../../common/magicCard/MagicCard";
 import { Searcher } from "../../common/searcher/Searcher";
 import { Filter } from "../../common/filter/Filter";
 
+
 export const Home = () => {
+  const navigate = useNavigate();
+
   const [cards, setCards] = useState([]);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -16,6 +21,9 @@ export const Home = () => {
   const [colours, setColours] = useState("b,w,u,r,g");
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
+
+  const userEmailLogin = useSelector(getUser).user.email;
+  const userName = useSelector(getUser).user.name;
 
   const calculateTotalPages = (res) => {
     if (res.headers["total-count"] % 100 == 0) {
@@ -67,6 +75,13 @@ export const Home = () => {
 
   return (
     <>
+      <Container fluid className="">
+        <Row className="d-flex align-items-center justify-content-center ">
+          <Col className="d-flex align-items-center justify-content-center py-5" sm={10}>
+            <h3 className="login-home" onClick={()=>{navigate("/login")}}>{userEmailLogin ? `Bienvenido, ${userName}` : "¡¡Logueate!!"}</h3>
+          </Col>
+        </Row>
+      </Container>
       <Container fluid className="bg-dark box-searcher-home">
         <Row className="d-flex justify-content-center ">
           <Col sm={10}>

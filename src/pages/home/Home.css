@@ -1,6 +1,23 @@
+
+
 .box-cards-home{
     flex-grow: 1;
     background-color: #222;
+}
+
+.login-home{
+    color:#999;
+    transition: all 0.9s;
+    cursor: pointer;
+    user-select: none; 
+}
+
+.login-home:hover{
+    color:#e49604;
+    text-decoration: underline;
+    transition: all 0.9s;
+    cursor: pointer;
+    user-select: none; 
 }
 
 .box-searcher-home{
@@ -8,10 +25,13 @@
     
 }
 
+
+
 .box-pagination-home{
     border-radius: 1rem;
     background: linear-gradient(-150deg, #e49604 0%,#264490 50%, #e49604 100%);
 }
+
 
 .pagination-button-home{
     border-radius: 0.8rem;

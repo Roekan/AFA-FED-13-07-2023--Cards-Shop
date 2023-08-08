@@ -12,6 +12,9 @@ import {
     deleteProducts,
     getProducts,
   } from "./../../reducers/sliceCart/";
+  import {
+    getUser
+  } from "./../../reducers/sliceUser/";
 import "./MagicCard.css";
 
 export const MagicCard = ({
@@ -33,6 +36,10 @@ export const MagicCard = ({
       dispatch(addFavorites(data));
     }
   };
+
+  const userEmailLogin = useSelector(getUser).user.email;
+
+
 
   const favorites = useSelector(getFavorites).favorites;
   const isFavorite = () => {
@@ -144,7 +151,7 @@ export const MagicCard = ({
               </Card.Body>
             </Col>
           </Row>
-          <Row>
+          <Row className={userEmailLogin ? "d-flex" : "d-none"}>
             <Col
               className="d-flex justify-content-center alignt-items-center"
               xs={6}

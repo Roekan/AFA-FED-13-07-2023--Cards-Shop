@@ -16,7 +16,7 @@ export const ProductCart = ({
   ...props
 }) => {
   const dispatch = useDispatch();
-  
+
   const deleteProduct = () => {
     const data = { id, name, colors, type, image, rarity, info, ...props };
       dispatch(deleteProducts(data));    
@@ -28,7 +28,7 @@ export const ProductCart = ({
       <Container fluid>
         <Row className="d-flex align-items-top justify-content-start box-product">
           <Col
-            className="d-flex align-items-center justify-content-center mx-2 p-2"
+            className="d-flex align-items-center justify-content-center mx-2 p-2 block-info-product"
             sm={1}
           >
             <Row>
@@ -49,7 +49,7 @@ export const ProductCart = ({
             </Row>
           </Col>
           <Col
-            className="d-flex justify-content-center name-product mx-2 p-2"
+            className="d-flex justify-content-center name-product mx-2 p-2 block-info-product"
             sm={1}
           >
             <Row>
@@ -68,7 +68,7 @@ export const ProductCart = ({
             </Row>
           </Col>
           <Col
-            className="d-flex justify-content-center name-product mx-2 p-2"
+            className="d-flex justify-content-center name-product mx-2 p-2 block-info-product"
             sm={2}
           >
             <Row>
@@ -87,7 +87,7 @@ export const ProductCart = ({
             </Row>
           </Col>
           <Col
-            className="d-flex justify-content-center name-product mx-2 p-2"
+            className="d-flex justify-content-center name-product mx-2 p-2 block-info-product"
             sm={2}
           >
             <Row>
@@ -106,7 +106,7 @@ export const ProductCart = ({
             </Row>
           </Col>
           <Col
-            className="d-flex justify-content-center name-product mx-2 p-2"
+            className="d-flex justify-content-center name-product mx-2 p-2 block-info-product"
             sm={2}
           >
             <Row>
@@ -161,7 +161,7 @@ export const ProductCart = ({
             </Row>
           </Col>
           <Col
-            className="d-flex justify-content-center name-product mx-2 p-2"
+            className="d-flex justify-content-center name-product mx-2 p-2 block-info-product"
             sm={2}
           >
             <Row>

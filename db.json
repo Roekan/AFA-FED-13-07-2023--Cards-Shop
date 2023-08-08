@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "name": "admin",
+      "lastname": "admin",
+      "email": "admin@admin.com",
+      "password": "Abcd1234",
+      "passwordVerification": "Abcd1234",
+      "phone": "666666666",
+      "adress": "",
+      "door": "",
+      "floor": "",
+      "adressCode": "",
+      "city": "",
+      "id": 1
+    },
+    {
+      "type": "user",
+      "name": "alvaro",
+      "lastname": "asd",
+      "email": "alvaro@alvaro.com",
+      "password": "alvaro",
+      "passwordVerification": "alvaro",
+      "phone": "p",
+      "adress": "p",
+      "door": "p",
+      "floor": "p",
+      "adressCode": "p",
+      "city": "o",
+      "id": 2
+    }
+  ]
+}

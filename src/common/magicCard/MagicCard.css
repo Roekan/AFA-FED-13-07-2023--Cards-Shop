@@ -64,9 +64,10 @@
 }
 
 .btn-detail:hover{
-    border: 2px solid #fff;
+    border: 2px solid #7e001e;
     color:#fff;
     text-decoration: underline;
+    background-color: #264490;
     transition: 0.6s;
 }
 

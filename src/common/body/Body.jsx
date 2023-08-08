@@ -4,6 +4,7 @@ import { Home } from "../../pages/home/Home"
 import { Detail } from "../../pages/detail/Detail"
 import { Login } from "../../pages/login/Login"
 import { Register } from "../../pages/register/Register"
+import { Favorites } from "../../pages/favorites/Favorites"
 
 
 export const Body = () => {
@@ -15,6 +16,7 @@ export const Body = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/favorites" element={<Favorites />} />
                 <Route path="/:id" element={<Detail />} />
             </Routes>
         </BrowserRouter>

@@ -1,5 +1,6 @@
 .box-footer{
     background-color: #333;
+    font-size: 0.85rem;
 }
 
 .creative-commons{
@@ -11,10 +12,13 @@
 }
 
 .box-list-footer{
-    background-color: red;
+    border-radius: 0px;
+    width: 50%;
 }
+
 .item-list-footer{
     background-color: #333;
+    
     border-top: none;
     border-left: none;
     border-right: none;

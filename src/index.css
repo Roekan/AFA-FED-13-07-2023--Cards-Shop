@@ -1,3 +1,23 @@
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #006633;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e49604;
+  border-radius: 2rem;
+  border: 4px ridge #e49604;
+}
+
+
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

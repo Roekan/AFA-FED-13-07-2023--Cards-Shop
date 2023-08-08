@@ -15,7 +15,7 @@ export const Home = () => {
   const [input, setInput] = useState("");
   const [colours, setColours] = useState("b,w,u,r,g");
   const dispatch = useDispatch();
-  // const anchor = useRef(null);
+  const [loading, setLoading] = useState(false);
 
   const calculateTotalPages = (res) => {
     if (res.headers["total-count"] % 100 == 0) {
@@ -36,9 +36,11 @@ export const Home = () => {
   };
 
   useEffect(() => {
+    setLoading(true);
     const bringData = setTimeout(() => {
       bringCardsByName(input, colours, page)
         .then((res) => {
+          setLoading(false);
           setCards(res.cards);
           setTotalPages(calculateTotalPages(res));
           dispatch(addCardsMagic(res.cards));
@@ -83,7 +85,7 @@ export const Home = () => {
           </Col>
         </Row>
       </Container>
-
+      
       <Container
         fluid
         className="d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-cards-home"
@@ -111,14 +113,16 @@ export const Home = () => {
             })}
         </Row>
         <Row>
-          <Pagination>
+          <Pagination className="mt-4 p-2 box-pagination-home">
             <Pagination.First
+            className="pagination-button-home"
               disabled={page <= 1}
               onClick={() => {
                 cambiarPagina(1);
               }}
             />
             <Pagination.Prev
+            className="pagination-button-home"
               disabled={page <= 1}
               onClick={() => {
                 cambiarPagina(page - 1);
@@ -152,12 +156,14 @@ export const Home = () => {
             <Pagination.Ellipsis />
 
             <Pagination.Next
+              className="pagination-button-home"
               disabled={page >= totalPages}
               onClick={() => {
                 cambiarPagina(page + 1);
               }}
             />
             <Pagination.Last
+              className="pagination-button-home"
               disabled={page >= totalPages}
               onClick={() => {
                 cambiarPagina(totalPages);

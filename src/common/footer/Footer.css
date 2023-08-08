@@ -1,0 +1,32 @@
+.box-footer{
+    background-color: #333;
+}
+
+.creative-commons{
+    color: #fff;
+}
+
+.creative-commons{
+    font-size: 0.8rem;
+}
+
+.box-list-footer{
+    background-color: red;
+}
+.item-list-footer{
+    background-color: #333;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #999;
+    transition: 0.6s;
+}
+
+.item-list-footer:hover{
+    background-color: #264490;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #e49604;
+    transition: 0.6s;
+}

@@ -5,15 +5,15 @@
 
 .btn-back{
     color:#999;
-    background-color: ;
     border: 2px solid #999;
     transition: all 0.6s;
 }
 
 .btn-back:hover{
-    color: #fff;
+    color: #e49604;
     transition: all 0.6s;
-    border: 2px solid #fff;
+    border: 2px solid #e49604;
+    background-color:#264490 ;
 }
 
 .box-detail{

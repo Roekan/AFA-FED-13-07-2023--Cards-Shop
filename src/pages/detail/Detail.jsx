@@ -20,7 +20,7 @@ export const Detail = () => {
     setLoading(false);
   }, []);
 
-   console.log('Card: ',card);
+  //  console.log('Card: ',card);
 
 
 

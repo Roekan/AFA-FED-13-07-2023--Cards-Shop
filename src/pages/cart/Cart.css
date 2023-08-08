@@ -1,0 +1,10 @@
+.box-cards-cart{
+    flex-grow: 1;
+    background-color: #222;
+    border: 2px;
+    border-bottom: red;
+}
+
+.title-cart{
+    color: #999;
+}

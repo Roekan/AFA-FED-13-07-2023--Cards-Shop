@@ -5,6 +5,7 @@ import { Detail } from "../../pages/detail/Detail"
 import { Login } from "../../pages/login/Login"
 import { Register } from "../../pages/register/Register"
 import { Favorites } from "../../pages/favorites/Favorites"
+import { Cart } from "../../pages/cart/Cart"
 
 
 export const Body = () => {
@@ -17,6 +18,7 @@ export const Body = () => {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/favorites" element={<Favorites />} />
+                <Route path="/cart" element={<Cart />} />
                 <Route path="/:id" element={<Detail />} />
             </Routes>
         </BrowserRouter>

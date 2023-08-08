@@ -20,8 +20,8 @@ export const Favorites = () => {
     return (
         <>
           <Container className="box-cards-favorites">
-          <Row className="d-flex align-items-top justify-content-center py-3 title-favoritos">
-            <h2 className="d-flex align-items-top justify-content-center py-3 title-favoritos">Favoritos</h2>
+          <Row className="d-flex align-items-top justify-content-center py-3">
+            <h2 className="d-flex align-items-top justify-content-center py-3 title-favorites">Favoritos</h2>
           </Row>
             <Row className="d-flex align-items-top justify-content-center py-3 ">
               {favorites.length > 0 &&

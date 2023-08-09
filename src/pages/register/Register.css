@@ -29,3 +29,23 @@
     font-size: 0.8rem;
     color:#999;
 }
+
+/* .form-control:invalid{
+    border: none;
+    background-image: none!important;
+    border-radius: 0%;
+} 
+
+.form-control:valid{
+    border: none;
+    background-image: none!important;
+    border-radius: 0%;
+} 
+
+.border-red{
+    border: 2px solid red;
+}
+
+.border-green{
+    border: 2px solid green;
+}  */

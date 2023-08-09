@@ -21,7 +21,6 @@ export const register = async (body) => {
     let { data } = await axios.post(`${API_URL}/users`, body);
     return data;
 }
-  
 export const users = async () => {
     let { data } = await axios.get(`${API_URL}/users`);
     return data;

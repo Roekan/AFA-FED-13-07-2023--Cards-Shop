@@ -12,7 +12,9 @@
       "floor": "",
       "adressCode": "",
       "city": "",
-      "id": 1
+      "id": 1,
+      "favorites": [],
+      "purchases": []
     },
     {
       "type": "user",
@@ -27,7 +29,26 @@
       "floor": "p",
       "adressCode": "p",
       "city": "A Coruña",
-      "id": 2
+      "id": 2,
+      "favorites": 4,
+      "purchases": []
+    },
+    {
+      "type": "user",
+      "name": "ñalba",
+      "lastname": "",
+      "email": "alba@alba.com",
+      "password": "Alba1234",
+      "passwordVerification": "Alba1234",
+      "phone": "634343433",
+      "adress": "ffff",
+      "door": "f",
+      "floor": "f",
+      "adressCode": "12345",
+      "city": "f",
+      "id": 18,
+      "favorites": [],
+      "purchases": []
     }
   ]
 }

@@ -1,57 +1,35 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import {  useNavigate } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import "./User.css";
-import { register } from "../../services/apiCalls";
-import { useNavigate } from "react-router-dom";
-import { users } from "../../services/apiCalls";
+import { updateUser } from "../../services/apiCalls";
+import { useSelector, useDispatch } from "react-redux";
+import { getUser, login, logout } from "../../reducers/sliceUser";
 
 export const User = () => {
+  const rdxUserData = useSelector(getUser);
+  const dispatch = useDispatch();
+  const [userData, setUserData] = useState(rdxUserData.user);
   const navigate = useNavigate();
 
-  const [userData, setUserData] = useState({
-    type: "user",
-    name: "",
-    lastname: "",
-    email: "",
-    password: "",
-    passwordVerification: "",
-    phone: "",
-    adress: "",
-    door: "",
-    floor: "",
-    adressCode: "",
-    city: "",
-  });
 
-  const saveData = () => {
-    users()
+  const updateData = () => {
+    updateUser(userData)
       .then((res) => {
-        const userFound = res.find(
-          (element) => element.email == userData.email
-        );
-        /*Añadir comprobaciones RegEx del formulario */
-        if (!userFound) {
-          register(userData)
-            .then(() => {
-              setTimeout(() => {
-                navigate("/login");
-              }, 750);
-            })
-            .catch((error) => {
-              console.log(error);
-            });
-        } else {
-          console.log("Este email ya está registrado");
-        }
+        dispatch(login({ user: res}))
+        console.log(res)
       })
       .catch((error) => {
         console.log(error);
       });
-
-    /*Comprobaciones formulario registro */
   };
+
+  const logOut = () =>{
+    dispatch(logout({ user: {}}))
+    navigate("/login")
+  }
 
   return (
     <>
@@ -71,7 +49,7 @@ export const User = () => {
         <Row className="d-flex align-items-center justify-content-center">
           <Col sm={12} md={10} lg={6}>
             <InputGroup className="mb-3">
-              <InputGroup.Text id="text-name" className="label-register">
+              <InputGroup.Text id="text-name" className="label-register-user">
                 Nombre
               </InputGroup.Text>
               <Form.Control
@@ -132,28 +110,6 @@ export const User = () => {
                 className="p-1 bg-input-register "
                 aria-label="Contraseña"
                 aria-describedby="Contraseña"
-              />
-            </InputGroup>
-            <InputGroup className="mb-3">
-              <InputGroup.Text
-                id="text-emailVerification"
-                className="label-register"
-              >
-                Confirmar contraseña*
-              </InputGroup.Text>
-              <Form.Control
-                type={"password"}
-                name={"passwordVerification"}
-                value={userData.passwordVerification}
-                onChange={(e) => {
-                  setUserData({
-                    ...userData,
-                    passwordVerification: e.target.value,
-                  });
-                }}
-                className="p-1 bg-input-register "
-                aria-label="Confirmar email"
-                aria-describedby="Confirmar email"
               />
             </InputGroup>
             <InputGroup className="mb-3">
@@ -252,18 +208,6 @@ export const User = () => {
                 aria-describedby="Localidad"
               />
             </InputGroup>
-            <Form.Check
-              name={"legal"}
-              className="text-legal"
-              inline
-              label="Acepto términos y condiciones"
-            />
-            <p className="text-legal ">
-              Tus datos personales se utilizarán para procesar tu pedido,
-              mejorar tu experiencia en esta web, gestionar el acceso a tu
-              cuenta y otros propósitos descritos en nuestra política de
-              privacidad.
-            </p>
           </Col>
         </Row>
         <Row className="d-flex align-items-center justify-content-center">
@@ -277,10 +221,19 @@ export const User = () => {
               variant="outline-secondary"
               className=" button-login"
               onClick={() => {
-                saveData();
+                updateData();
               }}
             >
-              Register
+              Editar datos
+            </Button>
+            <Button
+              variant="outline-secondary"
+              className=" button-login"
+              onClick={() => {
+                logOut();
+              }}
+            >
+              Log out
             </Button>
           </Col>
         </Row>

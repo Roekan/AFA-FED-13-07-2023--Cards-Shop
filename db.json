@@ -16,17 +16,17 @@
     },
     {
       "type": "user",
-      "name": "alvaro",
+      "name": "Ñalvaro",
       "lastname": "asd",
       "email": "alvaro@alvaro.com",
-      "password": "alvaro",
-      "passwordVerification": "alvaro",
+      "password": "Abcd1234",
+      "passwordVerification": "Abcd1234",
       "phone": "p",
       "adress": "p",
       "door": "p",
       "floor": "p",
       "adressCode": "p",
-      "city": "o",
+      "city": "A Coruña",
       "id": 2
     }
   ]

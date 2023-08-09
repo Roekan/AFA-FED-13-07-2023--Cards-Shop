@@ -20,9 +20,10 @@
     transition: 0.6s;
 }
 
-.label-register{
+.label-register-user{
     background-color: #999;
     color:#fff;
+    user-select: none;  
 }
 
 .text-legal{

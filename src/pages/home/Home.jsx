@@ -75,10 +75,13 @@ export const Home = () => {
 
   return (
     <>
-      <Container fluid className="">
+      <Container fluid className="box-name-home">
         <Row className="d-flex align-items-center justify-content-center ">
-          <Col className="d-flex align-items-center justify-content-center py-5" sm={10}>
-            <h3 className="login-home" onClick={()=>{navigate("/login")}}>{userEmailLogin ? `Bienvenido, ${userName}` : "¡¡Logueate!!"}</h3>
+          <Col className="d-flex align-items-center justify-content-start py-1" sm={11}>
+            {userEmailLogin 
+            ?<h6 className="login-home-logued">{`Bienvenido, ${userName}`}</h6>
+            :<h6 className="login-home" onClick={()=>{navigate("/login")}}>¡¡Logueate!!</h6>
+          }
           </Col>
         </Row>
       </Container>

@@ -5,11 +5,20 @@
     background-color: #222;
 }
 
+.box-name-home{
+    background-color: #222;
+}
+
 .login-home{
     color:#999;
     transition: all 0.9s;
     cursor: pointer;
     user-select: none; 
+}
+
+.login-home-logued{
+    color:#e49604; 
+    user-select: none;  
 }
 
 .login-home:hover{

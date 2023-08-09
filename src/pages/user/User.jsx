@@ -266,6 +266,12 @@ export const User = () => {
                   aria-describedby="Localidad"
                 />
               </InputGroup>
+              {
+              userData.purchases.map(purchase => {
+                return <Col key={purchase.date}>{purchase.date}</Col>
+              }
+
+              )}
             </Col>
           </Row>
           <Row className="d-flex align-items-center justify-content-center">

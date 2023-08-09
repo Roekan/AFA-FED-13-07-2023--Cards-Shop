@@ -7,6 +7,13 @@ export const sliceUser = createSlice({
       user: {}
     },
     reducers: {
+      addPurchases: (state, action) => {
+        console.log("payload",action.payload)
+        return {
+          ...state,
+          user: {...state.user, purchases: [...state.user.purchases, action.payload]}
+        }
+      },
       login: (state, action) => {
         return {
           ...state,
@@ -23,6 +30,6 @@ export const sliceUser = createSlice({
     }
 });
 
-export const { login, logout } = sliceUser.actions;
+export const { login, logout, addPurchases } = sliceUser.actions;
 export const getUser = (state) => state.user;
 export default sliceUser.reducer;

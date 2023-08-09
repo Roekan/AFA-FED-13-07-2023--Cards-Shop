@@ -1,24 +1,46 @@
 import { useEffect, useState } from "react";
-import {  useSelector } from "react-redux";
-import { getProducts } from "./../../reducers/sliceCart/";
+import { useSelector, useDispatch } from "react-redux";
+import { getProducts, deleteAllProducs } from "./../../reducers/sliceCart/";
 import { ProductCart } from "./../../common/productCart/ProductCart";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { updateUser } from "../../services/apiCalls";
+import { getUser, addPurchases } from "../../reducers/sliceUser";
 import "./Cart.css";
 
 export const Cart = () => {
+  const userData = useSelector(getUser).user;
+  const dispatch = useDispatch();
+
   const [products, setProducts] = useState([]);
 
   let rdxCartProducts = useSelector(getProducts);
-
-
-
-
-
 
   useEffect(() => {
     setProducts(rdxCartProducts.productsCart);
     console.log("AAA", rdxCartProducts);
   }, [rdxCartProducts.productsCart]);
+
+  const buy = () => {
+    const purchase = {
+      date: new Date(),
+      products: products,
+    };
+
+    /*Se guarda en redux el pedido nuevo que vamos a hacer */
+    dispatch(addPurchases(purchase));
+
+    console.log(userData);
+
+    updateUser({...userData, purchases: [...userData.purchases, purchase]})
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
+    dispatch(deleteAllProducs());
+  };
 
   return (
     <>
@@ -66,11 +88,19 @@ export const Cart = () => {
         </Row>
         <Row className="d-flex align-items-top justify-content-center py-3">
           <Col className="d-flex align-items-top justify-content-center">
-          <Button variant="outline-light" onClick={()=>{buy()}}>Comprar</Button>
+            {products.length && (
+              <Button
+                variant="outline-light"
+                onClick={() => {
+                  buy();
+                }}
+              >
+                Comprar
+              </Button>
+            )}
           </Col>
-      </Row>
+        </Row>
       </Container>
-
     </>
   );
 };

@@ -27,6 +27,7 @@
   color: #e49604;
   background-color: #264490;
   text-decoration: underline;
+  border: 2px solid #e49604;
   transition: 0.6s;
 }
 
@@ -36,12 +37,14 @@
   color: #e49604;
   border: 2px solid #e49604;
   background-color: #7e001e;
+  transition:0.6s;
 }
 
 .btn-drop-cart:hover {
-  color: red;
-  border: 2px solid #e49604;
-  background-color: #7e001e;
+  color: #7e001e;
+  border: 2px solid #7e001e;
+  background-color: #e49604;
+  transition:0.6s;
 }
 
 .block-info-product{

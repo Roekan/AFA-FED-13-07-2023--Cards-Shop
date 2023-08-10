@@ -15,6 +15,7 @@ export const User = () => {
   const navigate = useNavigate();
 
   const [validated, setValidated] = useState(false);
+  const [msgSuccesUpdate, setMsgSuccesUpdate ]=useState("")
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -28,7 +29,11 @@ export const User = () => {
       event.preventDefault();
       event.stopPropagation();
       updateData();
-      console.log("se han modificado los datos");
+
+      setMsgSuccesUpdate(<p className="msg-update-info-user p-2">Se han actualizado los datos correctamente</p>)
+      setTimeout(()=> {
+        setMsgSuccesUpdate("")
+      },5000)
     }
   };
 
@@ -36,7 +41,6 @@ export const User = () => {
     updateUser(userData)
       .then((res) => {
         dispatch(login({ user: res }));
-        console.log(res);
       })
       .catch((error) => {
         console.log(error);
@@ -54,12 +58,12 @@ export const User = () => {
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Row className="d-flex align-items-center justify-content-center">
             <Col
-              className="d-flex align-items-center justify-content-center text-login"
+              className="d-flex align-items-center justify-content-center text-login mb-3"
               sm={12}
               md={10}
               lg={6}
             >
-              <p>Datos usuario</p>
+              <h2>Datos usuario</h2>
             </Col>
           </Row>
           <Row className="d-flex align-items-center justify-content-center">
@@ -84,6 +88,8 @@ export const User = () => {
                   Debe introducir un nombre
                 </Form.Control.Feedback>
               </InputGroup>
+             </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text id="text-lastname" className="label-register">
                   Apellidos
@@ -100,6 +106,8 @@ export const User = () => {
                   aria-describedby="Apellidos"
                 />
               </InputGroup>
+              </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text id="text-email" className="label-register">
                   Email*
@@ -121,6 +129,8 @@ export const User = () => {
                   Debe introducir un email válido (ejemplo@ejemplo.com)
                 </Form.Control.Feedback>
               </InputGroup>
+              </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text id="text-password" className="label-register">
                   Contraseña
@@ -143,6 +153,8 @@ export const User = () => {
                   minúscula y 1 número)
                 </Form.Control.Feedback>
               </InputGroup>
+              </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text id="text-phone" className="label-register">
                   Teléfono
@@ -164,6 +176,8 @@ export const User = () => {
                   Debe introducir un teléfono válido
                 </Form.Control.Feedback>
               </InputGroup>
+              </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text id="text-adress" className="label-register">
                   Dirección
@@ -184,6 +198,8 @@ export const User = () => {
                   Debe introducir una dirección
                 </Form.Control.Feedback>
               </InputGroup>
+              </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text id="text-door" className="label-register">
                   Portal
@@ -204,6 +220,8 @@ export const User = () => {
                   Debe introducir un portal
                 </Form.Control.Feedback>
               </InputGroup>
+              </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text id="text-floor" className="label-register">
                   Piso
@@ -224,6 +242,8 @@ export const User = () => {
                   Debe introducir un piso
                 </Form.Control.Feedback>
               </InputGroup>
+              </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text
                   id="text-adress-code"
@@ -248,6 +268,8 @@ export const User = () => {
                   Debe introducir un código postal válido
                 </Form.Control.Feedback>
               </InputGroup>
+              </Col>       
+             <Col sm={12} md={10} lg={6}>
               <InputGroup className="mb-3 hasValidation">
                 <InputGroup.Text id="text-city" className="label-register">
                   Localidad
@@ -267,7 +289,16 @@ export const User = () => {
               </InputGroup>
             </Col>
           </Row>
-
+          <Row className="d-flex align-items-center justify-content-center">
+            <Col
+              className="d-flex align-items-center justify-content-center py-4 "
+              sm={12}
+              md={10}
+              lg={6}
+            >
+              {msgSuccesUpdate}
+            </Col>
+          </Row>
           <Row className="d-flex align-items-center justify-content-center">
             <Col
               className="d-flex align-items-center justify-content-center py-4"
@@ -280,7 +311,7 @@ export const User = () => {
                 variant="outline-secondary"
                 className=" button-login m-3"
               >
-                Editar datos
+                Actualizar
               </Button>
               <Button
                 variant="outline-secondary"
@@ -301,7 +332,7 @@ export const User = () => {
                 md={10}
                 lg={6}
               >
-                <h3>No hay pedidos realizados</h3>
+                <h2>No hay pedidos realizados</h2>
               </Col>
             </Row>
           ) : (
@@ -312,7 +343,7 @@ export const User = () => {
                 md={10}
                 lg={6}
               >
-                <h3>Pedidos realizados</h3>
+                <h2>Pedidos realizados</h2>
               </Col>
             </Row>
           )}
@@ -324,17 +355,17 @@ export const User = () => {
                     <Row key={purchase.date} className="row-purchases-user">
                       <Col
                         sm={12}
-                        md={4}
-                        className="d-flex align-items-center justify-content-center"
+                        className="d-flex align-items-center justify-content-start pt-3"
                       >
-                        {purchase.date}
+                        <span className="title-id-purchase">Id. pedido: </span>{" "}
+                        &nbsp; {purchase.date}
                       </Col>
                       <Col
                         sm={12}
-                        md={8}
-                        className="d-flex align-items-center justify-content-center"
+                        md={10}
+                        className="d-flex align-items-center justify-content-sm-center justify-content-md-start"
                       >
-                        <Row className="py-3">
+                        <Row className="pb-3">
                           {purchase.products.map((card) => {
                             return (
                               <Col
@@ -344,7 +375,7 @@ export const User = () => {
                                 <Row>
                                   <Col
                                     sm={12}
-                                    className="d-flex align-items-center justify-content-center p-2"
+                                    className="d-flex align-items-center justify-content-center py-2 user-card-name"
                                   >
                                     {card.name}
                                   </Col>

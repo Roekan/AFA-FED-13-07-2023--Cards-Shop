@@ -1,3 +1,5 @@
+
+
 .box-magiccard{
     animation: scale-down-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
     color: #e49604;
@@ -24,11 +26,13 @@
 .title-magiccard{
     font-size: 1rem;
     transition: 0.6s;
+    min-height: 2rem;
 }
 
 .type-magiccard{
     font-size: 0.8rem;
     transition: 0.6s;
+    min-height: 2.6rem;
 }
 
 .info-magiccard{
@@ -57,7 +61,7 @@
 }
 
 .btn-detail{
-    border: 2px solid #e49604;
+    border: 2px solid #264490;
     color:#e49604;
     text-decoration: none;
     transition: 0.6s;
@@ -66,10 +70,10 @@
 }
 
 .btn-detail:hover{
-    border: 2px solid #7e001e;
-    color:#fff;
+    border: 2px solid #e49604;
+    color:#e49604;
     text-decoration: underline;
-    background-color: #264490;
+    background-color: #006633;
     transition: 0.6s;
     cursor: pointer;
     user-select: none; 
@@ -83,7 +87,7 @@
 }
 
 .button-favorites-img path:hover {
-    fill:#006633;
+    fill:#e49604;
     transition: all 0.6s;
 }
 
@@ -94,7 +98,7 @@
 }
 
 .button-cart-img path:hover {
-    fill:#006633;
+    fill:#e49604;
     transition: all 0.6s;
 }
 

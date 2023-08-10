@@ -31,13 +31,13 @@ export const Cart = () => {
 
     console.log(userData);
 
-    updateUser({...userData, purchases: [...userData.purchases, purchase]})
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+    updateUser({ ...userData, purchases: [...userData.purchases, purchase] })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
 
     dispatch(deleteAllProducs());
   };
@@ -73,23 +73,17 @@ export const Cart = () => {
               );
             })}
 
-          {!products.length && (
-            <>
-              <Row className="d-flex justify-content-center alignt-items-center">
-                <Col
-                  className="d-flex ustify-content-center alignt-items-center flex-column py-3 rounded-5 text-error-cart "
-                  xs={8}
-                >
-                  No hay productos en el carrito
-                </Col>
-              </Row>
-            </>
+          {products.length <= 0 && (
+            <Col className="my-2 d-flex align-items-center justify-content-center not-found-cart">
+              <h2>Aún no se ha añadido ningun producto al carrito</h2>
+            </Col>
           )}
         </Row>
         <Row className="d-flex align-items-top justify-content-center py-3">
           <Col className="d-flex align-items-top justify-content-center">
             {products.length && (
               <Button
+              className="btn-purchase-cart"
                 variant="outline-light"
                 onClick={() => {
                   buy();

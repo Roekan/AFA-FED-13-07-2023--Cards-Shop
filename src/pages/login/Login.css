@@ -1,4 +1,7 @@
-
+.box-login-home{
+    flex-grow: 1;
+    background-color: #222;
+}
 
 
 .bg-input-login, .bg-input-login::placeholder{

@@ -104,13 +104,91 @@ export const Home = () => {
         </Row>
       </Container>
 
-      {!loading && cards && (
+      {!loading && cards && cards.length<=0 && (
         <>
           <Container
             fluid
             className="d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-cards-home"
           >
             <Row>
+                    <Col
+                      className="rounded-2 my-2 d-flex align-items-center justify-content-center no-results"
+                    >
+                      <h2>No se han encontrado resultados</h2>
+                    </Col>
+            </Row>
+            <Row>
+              <Pagination className="mt-4 p-2 box-pagination-home">
+                <Pagination.First
+                  className="pagination-button-home"
+                  disabled={page <= 1}
+                  onClick={() => {
+                    cambiarPagina(1);
+                  }}
+                />
+                <Pagination.Prev
+                  className="pagination-button-home"
+                  disabled={page <= 1}
+                  onClick={() => {
+                    cambiarPagina(page - 1);
+                  }}
+                />
+
+                <Pagination.Ellipsis />
+
+                {page > 1 && (
+                  <Pagination.Item
+                    onClick={() => {
+                      cambiarPagina(page - 1);
+                    }}
+                  >
+                    {page - 1}
+                  </Pagination.Item>
+                )}
+
+                <Pagination.Item active>{page}</Pagination.Item>
+
+                {page < totalPages && (
+                  <Pagination.Item
+                    onClick={() => {
+                      cambiarPagina(page + 1);
+                    }}
+                  >
+                    {page + 1}
+                  </Pagination.Item>
+                )}
+
+                <Pagination.Ellipsis />
+
+                <Pagination.Next
+                  className="pagination-button-home"
+                  disabled={page >= totalPages}
+                  onClick={() => {
+                    cambiarPagina(page + 1);
+                  }}
+                />
+                <Pagination.Last
+                  className="pagination-button-home"
+                  disabled={page >= totalPages}
+                  onClick={() => {
+                    cambiarPagina(totalPages);
+                  }}
+                />
+              </Pagination>
+            </Row>
+          </Container>
+        </>
+      )}
+
+
+
+{!loading && cards && cards.length>0 && (
+        <>
+          <Container
+            fluid
+            className="d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-cards-home"
+          >
+            <Row >
               {cards &&
                 cards.map((card) => {
                   return (
@@ -194,6 +272,8 @@ export const Home = () => {
           </Container>
         </>
       )}
+
+
 
       {loading && (
         <Container className="box-detail">

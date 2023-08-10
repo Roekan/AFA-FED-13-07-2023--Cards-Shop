@@ -50,7 +50,7 @@ export const Login = () => {
 
   return (
     <>
-      <Container className="pt-5">
+      <Container className="pt-5 box-login-home">
       <Row className="d-flex align-items-center justify-content-center">
           <Col
             className="d-flex justify-content-center text-login"

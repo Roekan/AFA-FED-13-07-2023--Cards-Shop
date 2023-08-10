@@ -78,7 +78,7 @@ export const Register = () => {
 
   return (
     <>
-      <Container className="pt-5">
+      <Container className="pt-5 box-register-home" >
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Row className="d-flex align-items-center justify-content-center">
             <Col

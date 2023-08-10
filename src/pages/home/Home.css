@@ -34,7 +34,9 @@
     
 }
 
-
+.no-results{
+    color: #e49604 ;
+}
 
 .box-pagination-home{
     border-radius: 1rem;

@@ -1,3 +1,8 @@
+.box-register-home{
+    flex-grow: 1;
+    background-color: #222;
+}
+
 .bg-input-register, .bg-input-register::placeholder{
     background-color: #333;
     color:#999;

@@ -28,7 +28,7 @@ export const User = () => {
       event.preventDefault();
       event.stopPropagation();
       updateData();
-      console.log('se han modificado los datos')
+      console.log("se han modificado los datos");
     }
   };
 
@@ -253,8 +253,7 @@ export const User = () => {
                   Localidad
                 </InputGroup.Text>
                 <Form.Control
-                required
-                  
+                  required
                   type={"text"}
                   name={"city"}
                   value={userData.city}
@@ -266,14 +265,9 @@ export const User = () => {
                   aria-describedby="Localidad"
                 />
               </InputGroup>
-              {
-              userData.purchases.map(purchase => {
-                return <Col key={purchase.date}>{purchase.date}</Col>
-              }
-
-              )}
             </Col>
           </Row>
+
           <Row className="d-flex align-items-center justify-content-center">
             <Col
               className="d-flex align-items-center justify-content-center py-4"
@@ -284,19 +278,85 @@ export const User = () => {
               <Button
                 type="submit"
                 variant="outline-secondary"
-                className=" button-login"
+                className=" button-login m-3"
               >
                 Editar datos
               </Button>
               <Button
                 variant="outline-secondary"
-                className=" button-login"
+                className=" button-logout m-3"
                 onClick={() => {
                   logOut();
                 }}
               >
                 Log out
               </Button>
+            </Col>
+          </Row>
+
+          <Row className="d-flex align-items-center justify-content-center">
+            <Col
+              className="d-flex align-items-center justify-content-center mt-5 text-purchases"
+              sm={12}
+              md={10}
+              lg={6}
+            >
+              <h3>Pedidos realizados</h3>
+            </Col>
+          </Row>
+          <Row className="d-flex align-items-center justify-content-center mb-4">
+            <Col>
+              {userData.purchases.map((purchase) => {
+                return (
+                  <Row key={purchase.date} className="row-purchases-user">
+                    <Col
+                      sm={12}
+                      md={4}
+                      className="d-flex align-items-center justify-content-center"
+                    >
+                      {purchase.date}
+                    </Col>
+                    <Col
+                      sm={12}
+                      md={8}
+                      className="d-flex align-items-center justify-content-center"
+                    >
+                      <Row className="py-3">
+                        {purchase.products.map((card) => {
+                          return (
+                            <Col className="d-flex align-items-end justify-content-center" key={card.id}>
+                              <Row >
+                                <Col
+                                  sm={12}
+                                  className="d-flex align-items-center justify-content-center p-2"
+                                >
+                                {card.name}
+                                </Col>
+                                <Col
+                                  sm={12}
+                                  className="d-flex align-items-center justify-content-center"
+                                >
+                                  {card.imageUrl ? (
+                                    <img
+                                      className=" img-magiccard"
+                                      src={card.imageUrl}
+                                    />
+                                  ) : (
+                                    <img
+                                      className=" img-magiccard"
+                                      src={"./../../public/images/no-image.jpg"}
+                                    />
+                                  )}
+                                </Col>
+                              </Row>
+                            </Col>
+                          );
+                        })}
+                      </Row>
+                    </Col>
+                  </Row>
+                );
+              })}
             </Col>
           </Row>
         </Form>

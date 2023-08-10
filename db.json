@@ -761,6 +761,1064 @@
               ]
             }
           ]
+        },
+        {
+          "date": "2023-08-10T07:06:24.985Z",
+          "products": [
+            {
+              "id": "e6c9fe58-bc4f-529d-a387-77d61af87de4",
+              "name": "Black Lotus",
+              "type": "Artifact",
+              "image": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=600&type=card",
+              "rarity": "Rare",
+              "info": "{T}, Sacrifice Black Lotus: Add three mana of any one color.",
+              "manaCost": "{0}",
+              "cmc": 0,
+              "types": [
+                "Artifact"
+              ],
+              "set": "2ED",
+              "setName": "Unlimited Edition",
+              "text": "{T}, Sacrifice Black Lotus: Add three mana of any one color.",
+              "artist": "Christopher Rush",
+              "number": "233",
+              "layout": "normal",
+              "multiverseid": "600",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=600&type=card",
+              "printings": [
+                "2ED",
+                "30A",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "O90P",
+                "OVNT",
+                "PRM",
+                "VMA",
+                "YDMU"
+              ],
+              "originalText": "Adds 3 mana of any single color of your choice to your mana pool, then is discarded. Tapping this artifact can be played as an interrupt.",
+              "originalType": "Mono Artifact",
+              "legalities": [
+                {
+                  "format": "Commander",
+                  "legality": "Banned"
+                },
+                {
+                  "format": "Duel",
+                  "legality": "Banned"
+                },
+                {
+                  "format": "Legacy",
+                  "legality": "Banned"
+                },
+                {
+                  "format": "Oathbreaker",
+                  "legality": "Banned"
+                },
+                {
+                  "format": "Oldschool",
+                  "legality": "Restricted"
+                },
+                {
+                  "format": "Predh",
+                  "legality": "Banned"
+                },
+                {
+                  "format": "Vintage",
+                  "legality": "Restricted"
+                }
+              ]
+            },
+            {
+              "id": "7069fe50-d855-59ea-b445-e8068cda7559",
+              "name": "Deathmark",
+              "colors": [
+                "B"
+              ],
+              "type": "Sorcery",
+              "image": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129910&type=card",
+              "rarity": "Uncommon",
+              "info": "Destroy target green or white creature.",
+              "manaCost": "{B}",
+              "cmc": 1,
+              "colorIdentity": [
+                "B"
+              ],
+              "types": [
+                "Sorcery"
+              ],
+              "set": "10E",
+              "setName": "Tenth Edition",
+              "text": "Destroy target green or white creature.",
+              "flavor": "\"I hope it's true that every snowflake is unique, because I never want to see one like this again. Now clean up that body.\"\n—Thangbrand Gyrdsson, Kjeldoran patrol",
+              "artist": "Jeremy Jarvis",
+              "number": "134",
+              "layout": "normal",
+              "multiverseid": "129910",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129910&type=card",
+              "foreignNames": [
+                {
+                  "name": "Todeszeichen",
+                  "text": "Zerstöre eine grüne oder weiße Kreatur deiner Wahl.",
+                  "type": "Hexerei",
+                  "flavor": "„Ich hoffe, es stimmt, dass jede Schneeflocke einzigartig ist, da ich nie wieder etwas wie das hier sehen will. Und jetzt räum die Leiche weg.\" —Thangbrand Gyrdsson, Kjeldoranische Patrouille",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148471&type=card",
+                  "language": "German",
+                  "multiverseid": 148471
+                },
+                {
+                  "name": "Marca mortal",
+                  "text": "Destruye la criatura objetivo verde o blanca.",
+                  "type": "Conjuro",
+                  "flavor": "\"Espero que sea cierto que cada copo de nieve es único, porque no quiero volver a ver uno así nunca más. Ahora limpien ese cuerpo.\" —Thangbrand Gyrdsson, patrulla kjeldorana",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150450&type=card",
+                  "language": "Spanish",
+                  "multiverseid": 150450
+                },
+                {
+                  "name": "Mortemarque",
+                  "text": "Détruisez la créature verte ou blanche ciblée.",
+                  "type": "Rituel",
+                  "flavor": "« J'espère qu'il est vrai que chaque flocon de neige est unique, parce que je ne veux plus jamais en voir un pareil. Nettoyez-moi ce cadavre. » —Thangbrand Gyrdsson, patrouilleur kjeldorien",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150067&type=card",
+                  "language": "French",
+                  "multiverseid": 150067
+                },
+                {
+                  "name": "Marchiare a Morte",
+                  "text": "Distruggi una creatura verde o bianca bersaglio.",
+                  "type": "Stregoneria",
+                  "flavor": "\"Spero che sia vero che ogni fiocco di neve è unico, perché non voglio mai più vederne un altro come questo. Adesso togliete quel cadavere.\" —Thangbrand Gyrdsson, pattuglia di Kjeldor",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148854&type=card",
+                  "language": "Italian",
+                  "multiverseid": 148854
+                },
+                {
+                  "name": "死の印",
+                  "text": "緑か白のクリーチャー１体を対象とし、それを破壊する。",
+                  "type": "ソーサリー",
+                  "flavor": "雪の結晶に同じものが無いってのが本当なのを願うね。これと同じ物なんかもう見たくもないよ。 さあ、遺体を片付けよう。 ――キイェルドーの巡回兵、タングブランド・ゲルドソン",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148088&type=card",
+                  "language": "Japanese",
+                  "multiverseid": 148088
+                },
+                {
+                  "name": "Mancha da Morte",
+                  "text": "Destrua a criatura alvo verde ou branca.",
+                  "type": "Feitiço",
+                  "flavor": "\"Espero que seja verdade que todo floco de neve é único, porque não quero ver um como esse nunca mais. Agora limpem aquele corpo.\" — Thangbrand Gyrdsson, patrulheiro kjeldorano",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149684&type=card",
+                  "language": "Portuguese (Brazil)",
+                  "multiverseid": 149684
+                },
+                {
+                  "name": "Метка Смерти",
+                  "text": "Уничтожьте целевое зеленое или белое существо.",
+                  "type": "Волшебство",
+                  "flavor": "\"Надеюсь, правду говорят, будто не бывает двух одинаковых снежинок: я не хотел бы снова увидеть такую же. А теперь уберите труп\". — Тангбранд Гирдссон, патрульный Кьельдора",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149301&type=card",
+                  "language": "Russian",
+                  "multiverseid": 149301
+                },
+                {
+                  "name": "死印",
+                  "text": "消灭目标绿色或白色生物。",
+                  "type": "法术",
+                  "flavor": "「据说每片雪花都独一无二；希望这是真的，因为我再也不想看到这样一片。 快把尸体清理掉。」 ～奇亚多巡逻队的桑班·盖德森",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147705&type=card",
+                  "language": "Chinese Simplified",
+                  "multiverseid": 147705
+                }
+              ],
+              "printings": [
+                "10E",
+                "CSP",
+                "M10",
+                "M11",
+                "M12",
+                "MM2"
+              ],
+              "originalText": "Destroy target green or white creature.",
+              "originalType": "Sorcery",
+              "legalities": [
+                {
+                  "format": "Commander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Duel",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Legacy",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Modern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Oathbreaker",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Penny",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Predh",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Vintage",
+                  "legality": "Legal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2023-08-10T07:22:40.178Z",
+          "products": [
+            {
+              "id": "3b77bb52-4181-57f5-b3cd-f3a15b95aa29",
+              "name": "Angelic Chorus",
+              "colors": [
+                "W"
+              ],
+              "type": "Enchantment",
+              "image": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129710&type=card",
+              "rarity": "Rare",
+              "info": "Whenever a creature enters the battlefield under your control, you gain life equal to its toughness.",
+              "manaCost": "{3}{W}{W}",
+              "cmc": 5,
+              "colorIdentity": [
+                "W"
+              ],
+              "types": [
+                "Enchantment"
+              ],
+              "set": "10E",
+              "setName": "Tenth Edition",
+              "text": "Whenever a creature enters the battlefield under your control, you gain life equal to its toughness.",
+              "flavor": "The harmony of the glorious is a dirge to the wicked.",
+              "artist": "Jim Murray",
+              "number": "4",
+              "layout": "normal",
+              "multiverseid": "129710",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129710&type=card",
+              "rulings": [
+                {
+                  "date": "2004-10-04",
+                  "text": "This does not trigger on a permanent being turned into a creature. That is just a permanent changing type, not something entering the battlefield."
+                },
+                {
+                  "date": "2004-10-04",
+                  "text": "Angelic Chorus does not trigger when creatures phase in or change controllers."
+                }
+              ],
+              "foreignNames": [
+                {
+                  "name": "Choral der Engel",
+                  "text": "Immer wenn ein Kreatur unter deiner Kontrolle ins Spiel kommt, erhältst du soviele Lebenspunkte dazu, wie ihre Widerstandskraft beträgt.",
+                  "type": "Verzauberung",
+                  "flavor": "Dieser Einklang in Herrlichkeit ist ein Trauergesang für das Böse.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148415&type=card",
+                  "language": "German",
+                  "multiverseid": 148415
+                },
+                {
+                  "name": "Coro angélico",
+                  "text": "Siempre que una criatura entre en juego bajo tu control, ganas una cantidad de vida igual a su resistencia.",
+                  "type": "Encantamiento",
+                  "flavor": "La armonía de lo glorioso es un canto fúnebre para los malvados.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150320&type=card",
+                  "language": "Spanish",
+                  "multiverseid": 150320
+                },
+                {
+                  "name": "Chœur angélique",
+                  "text": "À chaque fois qu'une créature arrive en jeu sous votre contrôle, vous gagnez autant de points de vie que son endurance.",
+                  "type": "Enchantement",
+                  "flavor": "L'harmonie de la gloire est le chant funèbre du mal.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149937&type=card",
+                  "language": "French",
+                  "multiverseid": 149937
+                },
+                {
+                  "name": "Coro Angelico",
+                  "text": "Ogniqualvolta una creatura entra in gioco sotto il tuo controllo, guadagni un ammontare di punti vita pari alla sua costituzione.",
+                  "type": "Incantesimo",
+                  "flavor": "L'armonia dei gloriosi è un canto funebre per i malvagi.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148798&type=card",
+                  "language": "Italian",
+                  "multiverseid": 148798
+                },
+                {
+                  "name": "天使の合唱",
+                  "text": "いずれかのクリーチャーがあなたのコントロール下で場に出るたび、あなたはそれのタフネスに等しい点数のライフを得る。",
+                  "type": "エンチャント",
+                  "flavor": "栄光ある者達の合唱は、邪悪なる者達の葬送歌。",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148032&type=card",
+                  "language": "Japanese",
+                  "multiverseid": 148032
+                },
+                {
+                  "name": "Coro Angelical",
+                  "text": "Toda vez que uma criatura entra em jogo sob seu controle, você ganha uma quantidade de pontos de vida igual à resistência dela.",
+                  "type": "Encantamento",
+                  "flavor": "A harmonia do glorioso é um lamento para o perverso.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149554&type=card",
+                  "language": "Portuguese (Brazil)",
+                  "multiverseid": 149554
+                },
+                {
+                  "name": "Хор Ангелов",
+                  "text": "Каждый раз, когда в игру входит существо под вашим контролем, вы получаете количество жизни, равное его выносливости.",
+                  "type": "Чары",
+                  "flavor": "Песнь блаженных это погребальный плач для ушей нечестивых.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149171&type=card",
+                  "language": "Russian",
+                  "multiverseid": 149171
+                },
+                {
+                  "name": "天使的合唱",
+                  "text": "每当一个生物在你的操控下进场时，你获得等同于其防御力的生命。",
+                  "type": "结界",
+                  "flavor": "荣光声韵乃为恶者挽歌。",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147649&type=card",
+                  "language": "Chinese Simplified",
+                  "multiverseid": 147649
+                }
+              ],
+              "printings": [
+                "10E",
+                "BBD",
+                "USG"
+              ],
+              "originalText": "Whenever a creature comes into play under your control, you gain life equal to its toughness.",
+              "originalType": "Enchantment",
+              "legalities": [
+                {
+                  "format": "Commander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Duel",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Legacy",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Modern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Oathbreaker",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Penny",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Predh",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Premodern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Vintage",
+                  "legality": "Legal"
+                }
+              ]
+            },
+            {
+              "id": "55bd38ca-dc73-5c06-8f80-a6ddd2f44382",
+              "name": "Angelic Blessing",
+              "colors": [
+                "W"
+              ],
+              "type": "Sorcery",
+              "image": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129711&type=card",
+              "rarity": "Common",
+              "info": "Target creature gets +3/+3 and gains flying until end of turn. (It can't be blocked except by creatures with flying or reach.)",
+              "manaCost": "{2}{W}",
+              "cmc": 3,
+              "colorIdentity": [
+                "W"
+              ],
+              "types": [
+                "Sorcery"
+              ],
+              "set": "10E",
+              "setName": "Tenth Edition",
+              "text": "Target creature gets +3/+3 and gains flying until end of turn. (It can't be blocked except by creatures with flying or reach.)",
+              "flavor": "Only the warrior who can admit mortal weakness will be bolstered by immortal strength.",
+              "artist": "Mark Zug",
+              "number": "3",
+              "layout": "normal",
+              "multiverseid": "129711",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129711&type=card",
+              "variations": [
+                "c5655330-5131-5f40-9d3e-0549d88c6e9e"
+              ],
+              "foreignNames": [
+                {
+                  "name": "Himmlischer Segen",
+                  "text": "Eine Kreatur deiner Wahl erhält +3/+3 und Flugfähigkeit bis zum Ende des Zuges. (Sie kann außer von fliegenden Kreaturen und Kreaturen mit Reichweite nicht geblockt werden.)",
+                  "type": "Hexerei",
+                  "flavor": "Nur demjenigen Krieger, der sterbliche Schwäche zugeben kann, wird unsterbliche Stärke gewährt.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148414&type=card",
+                  "language": "German",
+                  "multiverseid": 148414
+                },
+                {
+                  "name": "Bendición angélica",
+                  "text": "La criatura objetivo obtiene +3/+3 y gana la habilidad de volar hasta el final del turno. (No puede ser bloqueada excepto por criaturas que tengan la habilidad de volar o alcance.)",
+                  "type": "Conjuro",
+                  "flavor": "Sólo el guerrero que pueda admitir debilidad mortal será auxiliado con fuerza inmortal.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150319&type=card",
+                  "language": "Spanish",
+                  "multiverseid": 150319
+                },
+                {
+                  "name": "Bénédiction angélique",
+                  "text": "La créature ciblée gagne +3/+3 et acquiert le vol jusqu'à la fin du tour. (Elle ne peut être bloquée que par des créatures avec le vol ou la portée.)",
+                  "type": "Rituel",
+                  "flavor": "Seul le guerrier qui admet une faiblesse mortelle peut recevoir la force immortelle.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149936&type=card",
+                  "language": "French",
+                  "multiverseid": 149936
+                },
+                {
+                  "name": "Benedizione Angelica",
+                  "text": "Una creatura bersaglio prende +3/+3 e ha volare fino alla fine del turno. (Non può essere bloccata tranne che da creature con volare o raggiungere.)",
+                  "type": "Stregoneria",
+                  "flavor": "Solo il guerriero capace di ammettere la propria fragilità mortale sarà sostenuto dalla forza immortale.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148797&type=card",
+                  "language": "Italian",
+                  "multiverseid": 148797
+                },
+                {
+                  "name": "天使の祝福",
+                  "text": "クリーチャー１体を対象とする。それはターン終了時まで＋３/＋３の修整を受けるとともに飛行を得る。 （それは飛行や到達を持たないクリーチャーによってブロックされない。）",
+                  "type": "ソーサリー",
+                  "flavor": "必滅の身であることを知っている戦士だけが、不滅の力に支えられる。",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148031&type=card",
+                  "language": "Japanese",
+                  "multiverseid": 148031
+                },
+                {
+                  "name": "Bênção Angelical",
+                  "text": "A criatura alvo recebe +3/+3 e ganha a habilidade de voar até o final do turno. (Ela só pode ser bloqueada por criaturas com a habilidade de voar ou alcance.)",
+                  "type": "Feitiço",
+                  "flavor": "Somente o guerreiro que for capaz de admitir sua própria fragilidade mortal será favorecido com força imortal.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149553&type=card",
+                  "language": "Portuguese (Brazil)",
+                  "multiverseid": 149553
+                },
+                {
+                  "name": "Благословение Ангела",
+                  "text": "Целевое существо получает +3/+3 и Полет до конца хода. (Оно может быть заблокировано только существом с Полетом или Захватом.)",
+                  "type": "Волшебство",
+                  "flavor": "Только тот воин, что признает в себе слабости смертных, будет наделен силой бессмертных.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149170&type=card",
+                  "language": "Russian",
+                  "multiverseid": 149170
+                },
+                {
+                  "name": "天使的祝福",
+                  "text": "目标生物得+3/+3并获得飞行异能直到回合结束。 （只有具飞行或延势异能的生物才能阻挡它。）",
+                  "type": "法术",
+                  "flavor": "只有勇于正视自身致命弱点的战士，才能受到超凡力量的庇护。",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147648&type=card",
+                  "language": "Chinese Simplified",
+                  "multiverseid": 147648
+                }
+              ],
+              "printings": [
+                "10E",
+                "9ED",
+                "EXO",
+                "P02",
+                "POR",
+                "PS11",
+                "S00",
+                "S99",
+                "TPR"
+              ],
+              "originalText": "Target creature gets +3/+3 and gains flying until end of turn. (It can't be blocked except by creatures with flying or reach.)",
+              "originalType": "Sorcery",
+              "legalities": [
+                {
+                  "format": "Commander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Duel",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Legacy",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Modern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Oathbreaker",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Pauper",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Paupercommander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Penny",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Predh",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Premodern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Vintage",
+                  "legality": "Legal"
+                }
+              ]
+            },
+            {
+              "id": "8fd4e2eb-3eb4-50ea-856b-ef638fa47f8a",
+              "name": "Angel of Mercy",
+              "colors": [
+                "W"
+              ],
+              "type": "Creature — Angel",
+              "rarity": "Uncommon",
+              "info": "Flying\nWhen Angel of Mercy enters the battlefield, you gain 3 life.",
+              "manaCost": "{4}{W}",
+              "cmc": 5,
+              "colorIdentity": [
+                "W"
+              ],
+              "types": [
+                "Creature"
+              ],
+              "subtypes": [
+                "Angel"
+              ],
+              "set": "10E",
+              "setName": "Tenth Edition",
+              "text": "Flying\nWhen Angel of Mercy enters the battlefield, you gain 3 life.",
+              "flavor": "Every tear shed is a drop of immortality.",
+              "artist": "Volkan Baǵa",
+              "number": "2★",
+              "power": "3",
+              "toughness": "3",
+              "layout": "normal",
+              "variations": [
+                "57aaebc1-850c-503d-9f6e-bb8d00d8bf7c"
+              ],
+              "printings": [
+                "10E",
+                "8ED",
+                "9ED",
+                "DDC",
+                "DVD",
+                "IMA",
+                "INV",
+                "JMP",
+                "MB1",
+                "P02",
+                "PS11",
+                "PSAL",
+                "S99"
+              ],
+              "legalities": [
+                {
+                  "format": "Commander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Duel",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Gladiator",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Historic",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Historicbrawl",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Legacy",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Modern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Oathbreaker",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Pauper",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Paupercommander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Penny",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Predh",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Premodern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Vintage",
+                  "legality": "Legal"
+                }
+              ]
+            },
+            {
+              "id": "60b93108-8790-591b-844e-c3d311698767",
+              "name": "Angelic Wall",
+              "colors": [
+                "W"
+              ],
+              "type": "Creature — Wall",
+              "rarity": "Common",
+              "info": "Defender (This creature can't attack.)\nFlying",
+              "manaCost": "{1}{W}",
+              "cmc": 2,
+              "colorIdentity": [
+                "W"
+              ],
+              "types": [
+                "Creature"
+              ],
+              "subtypes": [
+                "Wall"
+              ],
+              "set": "10E",
+              "setName": "Tenth Edition",
+              "text": "Defender (This creature can't attack.)\nFlying",
+              "flavor": "\"The Ancestor protects us in ways we can't begin to comprehend.\"\n—Mystic elder",
+              "artist": "John Avon",
+              "number": "5★",
+              "power": "0",
+              "toughness": "4",
+              "layout": "normal",
+              "variations": [
+                "fadda48c-6226-5ac5-a2b9-e9170d2017cd"
+              ],
+              "printings": [
+                "10E",
+                "AVR",
+                "M14",
+                "ODY",
+                "P02"
+              ],
+              "legalities": [
+                {
+                  "format": "Commander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Duel",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Legacy",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Modern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Oathbreaker",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Pauper",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Paupercommander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Penny",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Pioneer",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Predh",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Premodern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Vintage",
+                  "legality": "Legal"
+                }
+              ]
+            },
+            {
+              "id": "6d268c95-c176-5766-9a46-c14f739aba1c",
+              "name": "Bandage",
+              "colors": [
+                "W"
+              ],
+              "type": "Instant",
+              "image": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=132106&type=card",
+              "rarity": "Common",
+              "info": "Prevent the next 1 damage that would be dealt to any target this turn.\nDraw a card.",
+              "manaCost": "{W}",
+              "cmc": 1,
+              "colorIdentity": [
+                "W"
+              ],
+              "types": [
+                "Instant"
+              ],
+              "set": "10E",
+              "setName": "Tenth Edition",
+              "text": "Prevent the next 1 damage that would be dealt to any target this turn.\nDraw a card.",
+              "flavor": "Life is measured in inches. To a healer, every one of those inches is precious.",
+              "artist": "Rebecca Guay",
+              "number": "9",
+              "layout": "normal",
+              "multiverseid": "132106",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=132106&type=card",
+              "rulings": [
+                {
+                  "date": "2007-07-15",
+                  "text": "You draw the card when Bandage resolves, not when the damage is actually prevented."
+                }
+              ],
+              "foreignNames": [
+                {
+                  "name": "Verband",
+                  "text": "Verhindere den nächsten 1 Schadenspunkt, der in diesem Zug einer Kreatur oder einem Spieler deiner Wahl zugefügt würde.\nZiehe eine Karte.",
+                  "type": "Spontanzauber",
+                  "flavor": "Das Leben wird in Spannen gemessen. Für einen Heiler ist jede dieser Spannen wertvoll.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148428&type=card",
+                  "language": "German",
+                  "multiverseid": 148428
+                },
+                {
+                  "name": "Vendaje",
+                  "text": "Prevén el siguiente 1 punto de daño que se le fuera a hacer a la criatura o jugador objetivo este turno.\nRoba una carta.",
+                  "type": "Instantáneo",
+                  "flavor": "La vida se mide en centímetros. Para un sanador, cada uno de esos centímetros es precioso.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150325&type=card",
+                  "language": "Spanish",
+                  "multiverseid": 150325
+                },
+                {
+                  "name": "Bandage",
+                  "text": "Prévenez, ce tour-ci, la prochaine 1 blessure qui devrait être infligée à une cible, créature ou joueur.\nPiochez une carte.",
+                  "type": "Éphémère",
+                  "flavor": "La vie se mesure en centimètres. Pour le guérisseur, chacun d'eux est précieux.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149942&type=card",
+                  "language": "French",
+                  "multiverseid": 149942
+                },
+                {
+                  "name": "Fasciatura",
+                  "text": "Previeni il prossimo punto danno che verrebbe inflitto a una creatura o a un giocatore bersaglio in questo turno.\nPesca una carta.",
+                  "type": "Istantaneo",
+                  "flavor": "La vita è una questione di centimetri. Per un guaritore, ogni centimetro è prezioso.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148811&type=card",
+                  "language": "Italian",
+                  "multiverseid": 148811
+                },
+                {
+                  "name": "目かくし",
+                  "text": "クリーチャー１体かプレイヤー１人を対象とする。このターン、次にそれに与えられるダメージを１点軽減する。\nカードを１枚引く。",
+                  "type": "インスタント",
+                  "flavor": "命にとっては、一寸先は闇だ。 癒し手にとっては、その一寸が貴重なのだ。",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148045&type=card",
+                  "language": "Japanese",
+                  "multiverseid": 148045
+                },
+                {
+                  "name": "Atadura",
+                  "text": "Previna o próximo 1 ponto de dano que seria causado à criatura ou ao jogador alvo neste turno.\nCompre um card.",
+                  "type": "Mágica Instantânea",
+                  "flavor": "A vida é medida em centímetros. Para um curandeiro, cada um desses centímetros é precioso.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149559&type=card",
+                  "language": "Portuguese (Brazil)",
+                  "multiverseid": 149559
+                },
+                {
+                  "name": "Повязка",
+                  "text": "Предотвратите следующее 1 повреждение, которое будет нанесено целевому существу или игроку в этом ходу.\nВозьмите карту.",
+                  "type": "Мгновенное заклинание",
+                  "flavor": "Жизнь измеряется пядями. Настоящий целитель дорожит каждой из них.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149176&type=card",
+                  "language": "Russian",
+                  "multiverseid": 149176
+                },
+                {
+                  "name": "包扎",
+                  "text": "于本回合中，防止接下来将对目标生物或牌手造成的1点伤害。\n抓一张牌。",
+                  "type": "瞬间",
+                  "flavor": "生命由许多小部分组成。 对医者而言，这每个小部分都珍贵无比。",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147662&type=card",
+                  "language": "Chinese Simplified",
+                  "multiverseid": 147662
+                }
+              ],
+              "printings": [
+                "10E",
+                "STH",
+                "TPR"
+              ],
+              "originalText": "Prevent the next 1 damage that would be dealt to target creature or player this turn.\nDraw a card.",
+              "originalType": "Instant",
+              "legalities": [
+                {
+                  "format": "Commander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Duel",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Legacy",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Modern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Oathbreaker",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Pauper",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Paupercommander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Penny",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Predh",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Premodern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Vintage",
+                  "legality": "Legal"
+                }
+              ]
+            },
+            {
+              "id": "56f4935b-f6c5-59b9-88bf-9bcce20247ce",
+              "name": "Beacon of Immortality",
+              "colors": [
+                "W"
+              ],
+              "type": "Instant",
+              "image": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130553&type=card",
+              "rarity": "Rare",
+              "info": "Double target player's life total. Shuffle Beacon of Immortality into its owner's library.",
+              "manaCost": "{5}{W}",
+              "cmc": 6,
+              "colorIdentity": [
+                "W"
+              ],
+              "types": [
+                "Instant"
+              ],
+              "set": "10E",
+              "setName": "Tenth Edition",
+              "text": "Double target player's life total. Shuffle Beacon of Immortality into its owner's library.",
+              "flavor": "The cave floods with light. A thousand rays shine forth and meld into one.",
+              "artist": "Rob Alexander",
+              "number": "10",
+              "layout": "normal",
+              "multiverseid": "130553",
+              "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130553&type=card",
+              "rulings": [
+                {
+                  "date": "2007-02-01",
+                  "text": "If you double a negative life total, you do the real math. A life total of -10 becomes -20."
+                },
+                {
+                  "date": "2007-07-15",
+                  "text": "Beacon of Immortality’s effect counts as life gain (or life loss, if the life total was negative) for effects that trigger on or replace life gain (or life loss)."
+                },
+                {
+                  "date": "2007-07-15",
+                  "text": "If a Beacon is countered or doesn’t resolve, it’s put into its owner’s graveyard, not shuffled into the library."
+                }
+              ],
+              "foreignNames": [
+                {
+                  "name": "Leitstern der Unsterblichkeit",
+                  "text": "Verdopple die Lebenspunkte eines Spielers deiner Wahl. Mische den Leitstern der Unsterblichkeit in die Bibliothek seines Besitzers.",
+                  "type": "Spontanzauber",
+                  "flavor": "Die Höhle füllt sich mit Licht. Tausend Strahlen leuchten hinein und verschmelzen miteinander.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148431&type=card",
+                  "language": "German",
+                  "multiverseid": 148431
+                },
+                {
+                  "name": "Faro de inmortalidad",
+                  "text": "Duplica el total de vidas del jugador objetivo. Baraja el Faro de inmortalidad en la biblioteca de su propietario.",
+                  "type": "Instantáneo",
+                  "flavor": "La cueva está inundada de luz. Miles de rayos brillan de ella y se funden en uno.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150326&type=card",
+                  "language": "Spanish",
+                  "multiverseid": 150326
+                },
+                {
+                  "name": "Flambeau de l'Immortalité",
+                  "text": "Doublez le total de points de vie du joueur ciblé. Mélangez le Flambeau de l'Immortalité dans la bibliothèque de son propriétaire.",
+                  "type": "Éphémère",
+                  "flavor": "La caverne est baignée de lumière. Mille rayons convergent pour n'en plus former qu'un.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149943&type=card",
+                  "language": "French",
+                  "multiverseid": 149943
+                },
+                {
+                  "name": "Faro dell'Immortalità",
+                  "text": "Raddoppia i punti vita di un giocatore bersaglio. Rimescola il Faro dell'Immortalità nel grimorio del suo proprietario.",
+                  "type": "Istantaneo",
+                  "flavor": "La caverna è inondata di luce. Migliaia di raggi balenano nel buio e si fondono in un unico sprazzo.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148814&type=card",
+                  "language": "Italian",
+                  "multiverseid": 148814
+                },
+                {
+                  "name": "不死の標",
+                  "text": "プレイヤー１人を対象とし、そのプレイヤーのライフの総量を２倍にする。 不死の標をオーナーのライブラリーに加えて切り直す。",
+                  "type": "インスタント",
+                  "flavor": "洞穴は光に満ちている。 幾千もの光が注ぎだし、そして一つにと溶け合うのだ。",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148048&type=card",
+                  "language": "Japanese",
+                  "multiverseid": 148048
+                },
+                {
+                  "name": "Guia da Imortalidade",
+                  "text": "Duplique o total de pontos de vida do jogador alvo. Embaralhe Guia da Imortalidade no grimório de seu dono.",
+                  "type": "Mágica Instantânea",
+                  "flavor": "A caverna se inunda de luz. Milhares de raios reluzem e se combinam em um.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149560&type=card",
+                  "language": "Portuguese (Brazil)",
+                  "multiverseid": 149560
+                },
+                {
+                  "name": "Маяк Бессмертия",
+                  "text": "Удвойте количество жизни целевого игрока. Втасуйте Маяк Бессмертия в библиотеку его владельца.",
+                  "type": "Мгновенное заклинание",
+                  "flavor": "Свет наполняет пещеру. Тысяча лучей, вспыхивая, сливается в один.",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149177&type=card",
+                  "language": "Russian",
+                  "multiverseid": 149177
+                },
+                {
+                  "name": "永生信标",
+                  "text": "将目标牌手的总生命加倍。 将永生信标洗入其拥有者的牌库。",
+                  "type": "瞬间",
+                  "flavor": "洞窟内光华满溢；万道白芒激射而出，终尔融聚为一。",
+                  "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147665&type=card",
+                  "language": "Chinese Simplified",
+                  "multiverseid": 147665
+                }
+              ],
+              "printings": [
+                "10E",
+                "5DN",
+                "E02",
+                "MB1"
+              ],
+              "originalText": "Double target player's life total. Shuffle Beacon of Immortality into its owner's library.",
+              "originalType": "Instant",
+              "legalities": [
+                {
+                  "format": "Commander",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Duel",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Legacy",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Modern",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Oathbreaker",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Penny",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Predh",
+                  "legality": "Legal"
+                },
+                {
+                  "format": "Vintage",
+                  "legality": "Legal"
+                }
+              ]
+            }
+          ]
         }
       ],
       "id": 2

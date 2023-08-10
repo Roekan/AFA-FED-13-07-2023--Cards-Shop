@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import "./register.css";
+import "./Register.css";
 import { register } from "../../services/apiCalls";
 import { useNavigate } from "react-router-dom";
 import { users } from "../../services/apiCalls";

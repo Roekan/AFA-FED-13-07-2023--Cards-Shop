@@ -9,7 +9,6 @@ export const ListUsers = () => {
 
   useEffect(() => {
     listUsers();
-    console.log("a", listAllUsers);
   }, []);
 
   const listUsers = () => {

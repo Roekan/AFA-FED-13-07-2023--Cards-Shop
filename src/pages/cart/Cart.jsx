@@ -17,7 +17,6 @@ export const Cart = () => {
 
   useEffect(() => {
     setProducts(rdxCartProducts.productsCart);
-    console.log("AAA", rdxCartProducts);
   }, [rdxCartProducts.productsCart]);
 
   const buy = () => {
@@ -29,11 +28,9 @@ export const Cart = () => {
     /*Se guarda en redux el pedido nuevo que vamos a hacer */
     dispatch(addPurchases(purchase));
 
-    console.log(userData);
 
     updateUser({ ...userData, purchases: [...userData.purchases, purchase] })
       .then((res) => {
-        console.log(res);
       })
       .catch((error) => {
         console.log(error);

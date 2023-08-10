@@ -8,7 +8,6 @@ export const sliceUser = createSlice({
     },
     reducers: {
       addPurchases: (state, action) => {
-        console.log("payload",action.payload)
         return {
           ...state,
           user: {...state.user, purchases: [...state.user.purchases, action.payload]}

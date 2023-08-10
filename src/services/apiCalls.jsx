@@ -13,7 +13,6 @@ export const bringCardsByName = async(name,colors, page)=>{
 
     name.trim()
     const {data, headers} = await axios.get(`${cards}?page=${page}${nameParam}${colorsParam}`)
-    // console.log('Data cards',data.cards)
     return {cards:data.cards, headers}
 }
 

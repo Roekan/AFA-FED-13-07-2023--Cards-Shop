@@ -3,7 +3,6 @@
     background-color: #222;
 }
 
-
 .bg-input-login, .bg-input-login::placeholder{
     background-color: #333;
     color:#999;
@@ -14,6 +13,10 @@
     background-color: #333;
     color:#fff;
     transition: 0.6s;
+}
+
+.msgUserNotFound{
+    color: #e49604 ;
 }
 
 .button-login{

@@ -52,7 +52,6 @@ export const Home = () => {
           setCards(res.cards);
           setTotalPages(calculateTotalPages(res));
           dispatch(addCardsMagic(res.cards));
-          // console.log('Res cards',res.cards)
         })
         .catch((error) => {
           console.log(`Error en la llamada bringCardsByName: ${error}`);
@@ -296,7 +295,7 @@ export const Home = () => {
               sm={12}
               className="d-flex align-items-center justify-content-center box-detail py-2 text-light"
             >
-              Loading...
+              Cargando...
             </Col>
           </Row>
         </Container>

@@ -62,7 +62,6 @@ export const Register = () => {
       .catch((error) => {
         console.log(error);
       });
-    console.log("Entra en findRegisterEmail", validateEmail);
     return validateEmail;
   };
 

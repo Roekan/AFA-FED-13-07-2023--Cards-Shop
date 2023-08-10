@@ -20,8 +20,6 @@ export const Detail = () => {
     setLoading(false);
   }, []);
 
-  //  console.log('Card: ',card);
-
 
 
   return (
@@ -289,7 +287,7 @@ export const Detail = () => {
               sm={12}
               className="d-flex align-items-center justify-content-center box-detail py-2 text-light"
             >
-              Loading...
+              Cargando...
             </Col>
           </Row>
         </Container>

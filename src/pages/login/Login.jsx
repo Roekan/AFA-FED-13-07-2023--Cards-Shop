@@ -8,50 +8,71 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../reducers/sliceUser";
 
-
-
 export const Login = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
+  const [msgUserNotFound, setMsgUserNotFound] = useState("");
 
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
+  const [userData, setUserData] = useState({
+    email: "",
+    password: "",
+  });
 
-  const [userData, setUserData]=useState({
-    email:"",
-    password:"",
-  })
-
-
-  const logIn=  ()=>{
+  const logIn = () => {
     users()
-    .then(
-      res=>{
-      const userFound = res.find(element => element.email==userData.email && element.password==userData.password );
+      .then((res) => {
+        const userFound = res.find(
+          (element) =>
+            element.email == userData.email &&
+            element.password == userData.password
+        );
 
-        if(userFound){
-          console.log(userFound.email)
-          dispatch(login({ user: userFound}))
-          console.log(userFound)
-          setTimeout(()=> {
+        if (userFound) {
+          dispatch(login({ user: userFound }));
+          setMsgUserNotFound(
+            <Row className="d-flex align-items-center justify-content-center">
+              <Col
+                className="d-flex align-items-center justify-content-center py-4 msgUserNotFound"
+                sm={12}
+                md={10}
+                lg={6}
+              >
+                Usuario encontrado, conectando
+              </Col>
+            </Row>
+          );
+          setTimeout(() => {
             navigate("/");
-          },750)
-        }else{
-          console.log('Contraseña o usuario no coinciden')
-        }
-      }
-    )
-    .catch(
-      error=>{
-        console.log(error)
-      }
-    )
-  }
+          }, 750);
+        } else {
+          setMsgUserNotFound(
+            <Row className="d-flex align-items-center justify-content-center">
+              <Col
+                className="d-flex align-items-center justify-content-center py-4 msgUserNotFound"
+                sm={12}
+                md={10}
+                lg={6}
+              >
+                Contraseña o usuario no coinciden
+              </Col>
+            </Row>
+          );
+          setTimeout(() => {
+            setMsgUserNotFound("");
+          }, 5000);
 
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <>
       <Container className="pt-5 box-login-home">
-      <Row className="d-flex align-items-center justify-content-center">
+        <Row className="d-flex align-items-center justify-content-center">
           <Col
             className="d-flex justify-content-center text-login"
             sm={12}
@@ -77,7 +98,9 @@ export const Login = () => {
                 type="email"
                 placeholder="Email"
                 value={userData.email}
-                onChange={(e)=>{setUserData({...userData, email:e.target.value})}}
+                onChange={(e) => {
+                  setUserData({ ...userData, email: e.target.value });
+                }}
                 aria-label="Email"
                 aria-describedby="basic-addon1"
               />
@@ -92,13 +115,16 @@ export const Login = () => {
                 type="password"
                 placeholder="Contraseña"
                 value={userData.password}
-                onChange={(e)=>{setUserData({...userData, password:e.target.value})}}
+                onChange={(e) => {
+                  setUserData({ ...userData, password: e.target.value });
+                }}
                 aria-label="Password"
                 aria-describedby="basic-addon1"
               />
             </InputGroup>
           </Col>
         </Row>
+        {msgUserNotFound}
         <Row className="d-flex align-items-center justify-content-center">
           <Col
             className="d-flex align-items-center justify-content-center py-4"
@@ -106,12 +132,18 @@ export const Login = () => {
             md={10}
             lg={6}
           >
-            <Button variant="outline-secondary" className=" button-login" onClick={()=>{logIn()}}>
+            <Button
+              variant="outline-secondary"
+              className=" button-login"
+              onClick={() => {
+                logIn();
+              }}
+            >
               Login
             </Button>
           </Col>
         </Row>
-        </Container>
+      </Container>
     </>
   );
 };

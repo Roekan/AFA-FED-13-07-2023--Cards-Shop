@@ -1,6 +1,7 @@
 {
   "users": [
     {
+      "type": "admin",
       "name": "admin",
       "lastname": "admin",
       "email": "admin@admin.com",

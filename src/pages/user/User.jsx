@@ -293,70 +293,88 @@ export const User = () => {
               </Button>
             </Col>
           </Row>
-
-          <Row className="d-flex align-items-center justify-content-center">
-            <Col
-              className="d-flex align-items-center justify-content-center mt-5 text-purchases"
-              sm={12}
-              md={10}
-              lg={6}
-            >
-              <h3>Pedidos realizados</h3>
-            </Col>
-          </Row>
+          {userData.purchases.length <= 0 ? (
+            <Row className="d-flex align-items-center justify-content-center">
+              <Col
+                className="d-flex align-items-center justify-content-center mt-5 text-purchases"
+                sm={12}
+                md={10}
+                lg={6}
+              >
+                <h3>No hay pedidos realizados</h3>
+              </Col>
+            </Row>
+          ) : (
+            <Row className="d-flex align-items-center justify-content-center">
+              <Col
+                className="d-flex align-items-center justify-content-center mt-5 text-purchases"
+                sm={12}
+                md={10}
+                lg={6}
+              >
+                <h3>Pedidos realizados</h3>
+              </Col>
+            </Row>
+          )}
           <Row className="d-flex align-items-center justify-content-center mb-4">
             <Col>
-              {userData.purchases.map((purchase) => {
-                return (
-                  <Row key={purchase.date} className="row-purchases-user">
-                    <Col
-                      sm={12}
-                      md={4}
-                      className="d-flex align-items-center justify-content-center"
-                    >
-                      {purchase.date}
-                    </Col>
-                    <Col
-                      sm={12}
-                      md={8}
-                      className="d-flex align-items-center justify-content-center"
-                    >
-                      <Row className="py-3">
-                        {purchase.products.map((card) => {
-                          return (
-                            <Col className="d-flex align-items-end justify-content-center" key={card.id}>
-                              <Row >
-                                <Col
-                                  sm={12}
-                                  className="d-flex align-items-center justify-content-center p-2"
-                                >
-                                {card.name}
-                                </Col>
-                                <Col
-                                  sm={12}
-                                  className="d-flex align-items-center justify-content-center"
-                                >
-                                  {card.imageUrl ? (
-                                    <img
-                                      className=" img-magiccard"
-                                      src={card.imageUrl}
-                                    />
-                                  ) : (
-                                    <img
-                                      className=" img-magiccard"
-                                      src={"./../../public/images/no-image.jpg"}
-                                    />
-                                  )}
-                                </Col>
-                              </Row>
-                            </Col>
-                          );
-                        })}
-                      </Row>
-                    </Col>
-                  </Row>
-                );
-              })}
+              {userData.purchases &&
+                userData.purchases.map((purchase) => {
+                  return (
+                    <Row key={purchase.date} className="row-purchases-user">
+                      <Col
+                        sm={12}
+                        md={4}
+                        className="d-flex align-items-center justify-content-center"
+                      >
+                        {purchase.date}
+                      </Col>
+                      <Col
+                        sm={12}
+                        md={8}
+                        className="d-flex align-items-center justify-content-center"
+                      >
+                        <Row className="py-3">
+                          {purchase.products.map((card) => {
+                            return (
+                              <Col
+                                className="d-flex align-items-end justify-content-center"
+                                key={card.id}
+                              >
+                                <Row>
+                                  <Col
+                                    sm={12}
+                                    className="d-flex align-items-center justify-content-center p-2"
+                                  >
+                                    {card.name}
+                                  </Col>
+                                  <Col
+                                    sm={12}
+                                    className="d-flex align-items-center justify-content-center"
+                                  >
+                                    {card.imageUrl ? (
+                                      <img
+                                        className=" img-magiccard"
+                                        src={card.imageUrl}
+                                      />
+                                    ) : (
+                                      <img
+                                        className=" img-magiccard"
+                                        src={
+                                          "./../../public/images/no-image.jpg"
+                                        }
+                                      />
+                                    )}
+                                  </Col>
+                                </Row>
+                              </Col>
+                            );
+                          })}
+                        </Row>
+                      </Col>
+                    </Row>
+                  );
+                })}
             </Col>
           </Row>
         </Form>

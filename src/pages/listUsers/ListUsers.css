@@ -1,3 +1,18 @@
-.list-users{
-    color: #999;
+.row-list-users-title{
+    color: #e49604;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.row-list-users-info{
+    color: #e49604;
+    border: 1px solid #7e001e;
+    
+}
+
+
+.cell-info-userList{
+    border-left: 2px solid #006633;
+    min-height: 5rem;
 }

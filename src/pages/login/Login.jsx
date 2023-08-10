@@ -6,7 +6,7 @@ import { users } from "../../services/apiCalls";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../reducers/sliceUser";
-import './login.css'
+import './Login.css'
 
 export const Login = () => {
   const navigate = useNavigate();

@@ -1,5 +1,4 @@
 import { Navigate, Routes, Route } from "react-router-dom";
-import { useSelector } from "react-redux";
 import { Home } from "../../pages/home/Home";
 import { Detail } from "../../pages/detail/Detail";
 import { Login } from "../../pages/login/Login";

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "magic-font";
-    src: url("../../public/fonts/magic.ttf");
+    src: url("./../../public/fonts/magic.ttf");
 }
 
 .bg-header{

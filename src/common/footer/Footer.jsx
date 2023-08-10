@@ -5,7 +5,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import "./Footer.css";
 
 export const Footer = () => {
-  const userTypeLogin = useSelector(getUser).user.type;
+  const userTypeLogin = useSelector(getUser)?.user?.type;
 
   return (
     <Container fluid className="box-footer">

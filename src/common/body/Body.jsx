@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
+import {  Navigate, Routes, Route } from "react-router-dom";
 import { Home } from "./../../pages/home/Home";
 import { Detail } from "./../../pages/detail/Detail";
 import { Login } from "./../../pages/login/Login";
@@ -13,7 +13,6 @@ import { ListUsers } from "./../../pages/listUsers/ListUsers";
 export const Body = () => {
   return (
     <>
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -25,7 +24,6 @@ export const Body = () => {
           <Route path="/:id" element={<Detail />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      </BrowserRouter>
     </>
   );
 };

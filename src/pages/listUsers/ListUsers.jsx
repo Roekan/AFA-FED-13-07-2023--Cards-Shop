@@ -30,15 +30,15 @@ export const ListUsers = () => {
           </h2>
         </Row>
         <Row
-          className="d-flex align-items-top justify-content-center py-2 my-2 row-list-users-title"
+          className="d-none d-md-flex align-items-top justify-content-center py-2 my-2 row-list-users-title"
         >
-          <Col className="d-flex align-items-center justify-content-center cell-title-userList">ID</Col>
-          <Col className="d-flex align-items-center justify-content-center cell-title-userList">Nombre</Col>
-          <Col className="d-flex align-items-center justify-content-center cell-title-userList">Apellido</Col>
-          <Col className="d-flex align-items-center justify-content-center cell-title-userList">Email</Col>
-          <Col className="d-flex align-items-center justify-content-center cell-title-userList">Contraseña</Col>
-          <Col className="d-flex align-items-center justify-content-center cell-title-userList">Telefono</Col>
-          <Col className="d-flex align-items-center justify-content-center cell-title-userList">Dirección</Col>
+          <Col className="d-none d-md-flex align-items-center justify-content-center cell-title-userList">ID</Col>
+          <Col className="d-none d-md-flex align-items-center justify-content-center cell-title-userList">Nombre</Col>
+          <Col className="d-none d-md-flex align-items-center justify-content-center cell-title-userList">Apellido</Col>
+          <Col className="d-none d-md-flex align-items-center justify-content-center cell-title-userList">Email</Col>
+          <Col className="d-none d-md-flex align-items-center justify-content-center cell-title-userList">Contraseña</Col>
+          <Col className="d-none d-md-flex align-items-center justify-content-center cell-title-userList">Telefono</Col>
+          <Col className="d-none d-md-flex align-items-center justify-content-center cell-title-userList">Dirección</Col>
         </Row>
         {listAllUsers.length > 0 &&
           listAllUsers.map((user) => {

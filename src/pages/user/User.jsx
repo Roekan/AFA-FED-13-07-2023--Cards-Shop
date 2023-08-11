@@ -354,7 +354,6 @@ export const User = () => {
               {userData.purchases &&
                 userData.purchases.map((purchase, i) => {
                   const date= purchase.date.toString()
-                  console.log(date)
                   return (
                     <Row key={i} className="row-purchases-user">
                       <Col

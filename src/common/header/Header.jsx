@@ -14,8 +14,6 @@ export const Header = () => {
   const userFavorites = useSelector(getFavorites).favorites
   const userPurchases = useSelector(getProducts).productsCart
 
-console.log(userPurchases)
-
 
   return (
     <>

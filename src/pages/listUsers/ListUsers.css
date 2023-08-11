@@ -2,7 +2,7 @@
     color: #e49604;
     font-weight: bold;
     text-decoration: underline;
-
+    display: flex;
 }
 
 .row-list-users-info{

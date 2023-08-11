@@ -27,22 +27,22 @@ Este proyecto requeria hacer una página web que simulase una tienda de cartas M
 ## Stack
 <div align="center">
 <a href="https://getbootstrap.com/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/bootstrap-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/lenguages/bootstrap-logo.png"/>
 </a>
 <a href="https://lenguajecss.com/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/css-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/css-logo.png"/>
 </a>
 <a href="https://lenguajehtml.com/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/html-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/html-logo.png"/>
 </a>
 <a href="https://www.javascript.com/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/js-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/js-logo.png"/>
 </a>
 <a href="https://es.react.dev/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/react-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/react-logo.png"/>
 </a>
 <a href="https://redux.js.org/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/redux-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/redux-logo.png"/>
 </a>
  </div>
 
@@ -77,47 +77,47 @@ Redux Toolkit
 
 ## Vistas
 
-Peliculas<br><br>
+Home (LogOut)<br><br>
     Desktop:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/peliculas-desktop.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/desktop/home-logout.png"><br><br>
     Movil:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/peliculas-mobile.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/mobile/home-logout.png"><br><br> 
 
-
-Series<br><br>
+Home (LogIn)<br><br>
     Desktop:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/series-desktop.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/desktop/home-login.png"><br><br>
     Movil:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/series-mobile.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/mobile/home-login.png"><br><br> 
 
-
-Top20<br><br>
--Peliculas<br><br>
+Login<br><br>
     Desktop:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/top20-peliculas-desktop.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/desktop/login.png"><br><br>
     Movil:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/top20-peliculas-mobile.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/mobile/login.png"><br><br> 
 
--Series<br><br>
+Registro<br><br>
     Desktop:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/top20-series-desktop.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/desktop/register.png"><br><br>
     Movil:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/top20-series-mobile.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/mobile/register.png"><br><br> 
 
+Carrito<br><br>
+    Desktop:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/desktop/cart.png"><br><br>
+    Movil:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/mobile/cart.png"><br><br> 
 
 Favoritos<br><br>
     Desktop:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/favoritos-desktop.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/desktop/favorites.png"><br><br>
     Movil:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/favoritos-mobile.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/mobile/favorites.png"><br><br> 
 
-
-Detalle<br><br>
+Lista de usuarios<br><br>
     Desktop:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/detalle-desktop.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/desktop/listusers.png"><br><br>
     Movil:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/detalle-mobile.png"><br><br> 
-
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/preview/mobile/listusers.png"><br><br> 
 
 ## Licencia
 Este proyecto se encuentra bajo licencia de Álvaro Fernández Arribas
@@ -127,14 +127,19 @@ Para conseguir mi objetivo he recopilado información de:
 
 - [react-bootstrap.netlify.app](https://react-bootstrap.netlify.app/) Para algunos diseños CSS y HTML
 - [www.w3schools.com](https://www.w3schools.com/) Para algunos diseños CSS
+- [www.bufa.es/](https://www.bufa.es/) Para algunos diseños CSS
 - [reactrouter.com](https://reactrouter.com/) Para funcionalidad de REACT
 - [www.npmjs.com](https://www.npmjs.com/) Para la obtencion de librerias
-- [www.themoviedb.org](https://www.themoviedb.org/) Para la obtencion de los elementos de la API
-- [developer.themoviedb.org/docs](https://developer.themoviedb.org/docs) Para la obtencion de informacion de organizacion de elementos de la API
+- [magicthegathering.io](https://magicthegathering.io/) Para la obtencion de los elementos de la API
+- [docs.magicthegathering.io/](https://docs.magicthegathering.io/) Para la obtencion de informacion de organizacion de elementos de la API
 - [www.iconhunt.site](https://www.iconhunt.site/) Para la obtencion de iconos
 - [www.cleanpng.com](https://www.cleanpng.com/) Para la obtencion de imágenes
+- [github.com/typicode/json-server](https://github.com/typicode/json-server) Para la obtencion de ayuda con el fichero JSON
+
 
 También he usado herramientas de:
+- [webcode.tools/generators/css/keyframe-animation](https://webcode.tools/generators/css/keyframe-animation) Para las animaciones CSS
+- [pickcoloronline.com](https://pickcoloronline.com/) Para la obtencion de colores corporativos de Magic
 - [www.cssmatic.com/box-shadow](https://www.cssmatic.com/box-shadow) Para la creacion de estilos CSS
 - [cssgradient.io](https://cssgradient.io/) Para la creacion de estilos CSS
 - [programmerclick.com](https://programmerclick.com/) Para la creacion de estilos CSS

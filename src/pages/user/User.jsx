@@ -352,15 +352,17 @@ export const User = () => {
           <Row className="d-flex align-items-center justify-content-center mb-4">
             <Col>
               {userData.purchases &&
-                userData.purchases.map((purchase) => {
+                userData.purchases.map((purchase, i) => {
+                  const date= purchase.date.toString()
+                  console.log(date)
                   return (
-                    <Row key={purchase.date} className="row-purchases-user">
+                    <Row key={i} className="row-purchases-user">
                       <Col
                         sm={12}
                         className="d-flex align-items-center justify-content-start pt-3"
                       >
                         <span className="title-id-purchase">Id. pedido: </span>{" "}
-                        &nbsp; {purchase.date}
+                         &nbsp; {date} 
                       </Col>
                       <Col
                         sm={12}

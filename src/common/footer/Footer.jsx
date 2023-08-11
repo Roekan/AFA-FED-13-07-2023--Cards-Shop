@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { getUser } from "./../../reducers/sliceUser/";
 import { Col, Container, Row } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
@@ -24,37 +25,42 @@ export const Footer = () => {
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/"
                     >
+                      <Link className="nav-footer" to="/">
                       Home
+                      </Link>
                     </ListGroup.Item>
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/favorites"
                     >
+                      <Link className="nav-footer" to="/favorites">
                       Favoritos
+                      </Link>
                     </ListGroup.Item>
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/cart"
                     >
+                      <Link className="nav-footer" to="/cart">
                       Cesta de compra
+                      </Link>
                     </ListGroup.Item>
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/user"
                     >
+                      <Link className="nav-footer" to="/user">
                       Mi perfil
+                      </Link>
                     </ListGroup.Item>
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/listusers"
                     >
+                      <Link className="nav-footer" to="/listusers">
                       Lista de usuarios registrados
+                      </Link>
                     </ListGroup.Item>
                   </>
                 ) : userTypeLogin === "user" ? (
@@ -62,30 +68,34 @@ export const Footer = () => {
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/"
                     >
+                      <Link className="nav-footer" to="/">
                       Home
+                      </Link>
                     </ListGroup.Item>
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/favorites"
                     >
+                      <Link className="nav-footer" to="/favorites">
                       Favoritos
+                      </Link>
                     </ListGroup.Item>
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/cart"
                     >
+                      <Link className="nav-footer" to="/cart">
                       Cesta de compra
+                      </Link>
                     </ListGroup.Item>
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/user"
                     >
+                      <Link className="nav-footer" to="/user">
                       Mi perfil
+                      </Link>
                     </ListGroup.Item>
                   </>
                 ) : (
@@ -93,9 +103,10 @@ export const Footer = () => {
                     <ListGroup.Item
                       className="item-list-footer"
                       action
-                      href="/login"
                     >
+                      <Link className="nav-footer" to="/login">
                       Login
+                      </Link>
                     </ListGroup.Item>
                   </>
                 )}

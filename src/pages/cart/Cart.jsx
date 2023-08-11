@@ -28,10 +28,8 @@ export const Cart = () => {
       date: new Date(),
       products: products,
     };
-
     /*Se guarda en redux el pedido nuevo que vamos a hacer */
     dispatch(addPurchases(purchase));
-
     updateUser({ ...userData, purchases: [...userData.purchases, purchase] })
       .then((res) => {
         setShow(true)
@@ -42,7 +40,6 @@ export const Cart = () => {
       .catch((error) => {
         console.log(error);
       });
-
     dispatch(deleteAllProducs());
   };
 

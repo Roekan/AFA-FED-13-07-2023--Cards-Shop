@@ -283,7 +283,7 @@ export const Home = () => {
               {
                 <img
                   className="rounded-4"
-                  src={`./../../public/images/load/load-${Math.trunc(
+                  src={`/public/images/load/load-${Math.trunc(
                     1 + Math.random() * 8
                   )}.gif`}
                   alt="load-img"

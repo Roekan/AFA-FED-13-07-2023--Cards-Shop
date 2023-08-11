@@ -34,7 +34,7 @@ useEffect(()=>{
                     id="b"
                     defaultChecked={true}
                 />
-                <img src='./../../public/images/elements/black.png' width={20} />
+                <img src='/public/images/elements/black.png' width={20} />
                 </Col>
                 <Col sm={12} md={2} className='d-flex align-items-center justify-content-center filter-white'>
                 <Form.Check 
@@ -45,7 +45,7 @@ useEffect(()=>{
                     id="w"
                     defaultChecked={true}
                 />
-                <img src='./../../public/images/elements/white.png' width={20} />
+                <img src='/public/images/elements/white.png' width={20} />
                 </Col>
                 <Col sm={12} md={2} className='d-flex align-items-center justify-content-center filter-blue'>
                 <Form.Check 
@@ -56,7 +56,7 @@ useEffect(()=>{
                     id="u"
                     defaultChecked={true}
                 />
-                <img src='./../../public/images/elements/blue.png' width={20} />
+                <img src='/public/images/elements/blue.png' width={20} />
                 </Col>
                 <Col sm={12} md={2} className='d-flex align-items-center justify-content-center filter-red'>
                 <Form.Check 
@@ -67,7 +67,7 @@ useEffect(()=>{
                     id="r"
                     defaultChecked={true}
                 />
-                <img src='./../../public/images/elements/red.png' width={20} />
+                <img src='/public/images/elements/red.png' width={20} />
                 </Col>
                 <Col sm={12} md={2} className='d-flex align-items-center justify-content-center filter-green'>
                 <Form.Check 
@@ -78,7 +78,7 @@ useEffect(()=>{
                     id="g"
                     defaultChecked={true}
                 />
-                <img src='./../../public/images/elements/green.png' width={20} />
+                <img src='/public/images/elements/green.png' width={20} />
                 </Col>
             </Row>
         </Container>

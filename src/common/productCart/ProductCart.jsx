@@ -42,7 +42,7 @@ export const ProductCart = ({
                   <Card.Img
                     className="d-flex align-items-center justify-content-center rounded-2 img-product-cart"
                     variant="top"
-                    src={"./../../public/images/no-image.jpg"}
+                    src={"/public/images/no-image.jpg"}
                   />
                 )}
               </Col>
@@ -127,31 +127,31 @@ export const ProductCart = ({
                         {color == "W" && (
                           <img
                             className="img-color-magiccard"
-                            src="./../../public/images/elements/white.png"
+                            src="/public/images/elements/white.png"
                           />
                         )}
                         {color == "U" && (
                           <img
                             className="img-color-magiccard"
-                            src="./../../public/images/elements/blue.png"
+                            src="/public/images/elements/blue.png"
                           />
                         )}
                         {color == "G" && (
                           <img
                             className="img-color-magiccard"
-                            src="./../../public/images/elements/green.png"
+                            src="/public/images/elements/green.png"
                           />
                         )}
                         {color == "B" && (
                           <img
                             className="img-color-magiccard"
-                            src="./../../public/images/elements/black.png"
+                            src="/public/images/elements/black.png"
                           />
                         )}
                         {color == "R" && (
                           <img
                             className="img-color-magiccard"
-                            src="./../../public/images/elements/red.png"
+                            src="/public/images/elements/red.png"
                           />
                         )}
                       </div>

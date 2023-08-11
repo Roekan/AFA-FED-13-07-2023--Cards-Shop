@@ -77,37 +77,37 @@ export const Detail = () => {
                             {color == "W" && (
                               <img
                                 className="img-color-magiccard"
-                                src="./../../public/images/elements/white.png"
+                                src="/public/images/elements/white.png"
                               />
                             )}
                             {color == "U" && (
                               <img
                                 className="img-color-magiccard"
-                                src="./../../public/images/elements/blue.png"
+                                src="/public/images/elements/blue.png"
                               />
                             )}
                             {color == "G" && (
                               <img
                                 className="img-color-magiccard"
-                                src="./../../public/images/elements/green.png"
+                                src="/public/images/elements/green.png"
                               />
                             )}
                             {color == "B" && (
                               <img
                                 className="img-color-magiccard"
-                                src="./../../public/images/elements/black.png"
+                                src="/public/images/elements/black.png"
                               />
                             )}
                             {color == "R" && (
                               <img
                                 className="img-color-magiccard"
-                                src="./../../public/images/elements/red.png"
+                                src="/public/images/elements/red.png"
                               />
                             )}
                             {color == "" && (
                               <img
                                 className="img-color-magiccard"
-                                src="./../../public/images/elements/no-encontrado.png"
+                                src="/public/images/elements/no-encontrado.png"
                               />
                             )}
                           </div>
@@ -186,35 +186,35 @@ export const Detail = () => {
                         {character == "W" && (
                           <img
                             className=" img-color-magiccard"
-                            src="./../../public/images/elements/white.png"
+                            src="/public/images/elements/white.png"
                             alt=""
                           />
                         )}
                         {character == "B" && (
                           <img
                             className=" img-color-magiccard"
-                            src="./../../public/images/elements/black.png"
+                            src="/public/images/elements/black.png"
                             alt=""
                           />
                         )}
                         {character == "U" && (
                           <img
                             className=" img-color-magiccard"
-                            src="./../../public/images/elements/blue.png"
+                            src="/public/images/elements/blue.png"
                             alt=""
                           />
                         )}
                         {character == "R" && (
                           <img
                             className=" img-color-magiccard"
-                            src="./../../public/images/elements/red.png"
+                            src="/public/images/elements/red.png"
                             alt=""
                           />
                         )}
                         {character == "G" && (
                           <img
                             className=" img-color-magiccard"
-                            src="./../../public/images/elements/green.png"
+                            src="/public/images/elements/green.png"
                             alt=""
                           />
                         )}
@@ -276,7 +276,7 @@ export const Detail = () => {
               {
                 <img
                   className="rounded-4"
-                  src={`./../../public/images/load/load-${Math.trunc(
+                  src={`/public/images/load/load-${Math.trunc(
                     1 + Math.random() * 8
                   )}.gif`}
                   alt="load-img"

@@ -392,7 +392,7 @@ export const User = () => {
                                       <img
                                         className=" img-magiccard"
                                         src={
-                                          "./../../public/images/no-image.jpg"
+                                          "/public/images/no-image.jpg"
                                         }
                                       />
                                     )}

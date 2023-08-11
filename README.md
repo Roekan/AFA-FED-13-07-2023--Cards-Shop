@@ -30,19 +30,19 @@ Este proyecto requeria hacer una página web que simulase una tienda de cartas M
     <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/lenguages/bootstrap-logo.png"/>
 </a>
 <a href="https://lenguajecss.com/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/css-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/lenguajes/css-logo.png"/>
 </a>
 <a href="https://lenguajehtml.com/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/html-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/lenguajes/html-logo.png"/>
 </a>
 <a href="https://www.javascript.com/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/js-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/lenguajes/js-logo.png"/>
 </a>
 <a href="https://es.react.dev/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/react-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/lenguajes/react-logo.png"/>
 </a>
 <a href="https://redux.js.org/">
-    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/redux-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/lenguajes/redux-logo.png"/>
 </a>
  </div>
 

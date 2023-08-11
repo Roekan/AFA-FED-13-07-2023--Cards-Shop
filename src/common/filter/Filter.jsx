@@ -6,7 +6,7 @@ import Blue from '/public/images/elements/blue.png'
 import Green from '/public/images/elements/green.png'
 import Red from '/public/images/elements/red.png'
 import White from '/public/images/elements/white.png'
-import NotFound from '/public/images/elements/no-enontrado.png'
+import NotFound from '/public/images/elements/no-encontrado.png'
 
 export const Filter = ({changeColours}) => {
 

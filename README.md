@@ -27,22 +27,22 @@ Este proyecto requeria hacer una página web que simulase una tienda de cartas M
 ## Stack
 <div align="center">
 <a href="https://getbootstrap.com/">
-    <img height="50px" width="auto" src= "/public/images/lenguages/bootstrap-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/lenguages/bootstrap-logo.png"/>
 </a>
 <a href="https://lenguajecss.com/">
-    <img height="50px" width="auto" src= "/public/lenguajes/css-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/css-logo.png"/>
 </a>
 <a href="https://lenguajehtml.com/">
-    <img height="50px" width="auto" src= "/public/lenguajes/html-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/html-logo.png"/>
 </a>
 <a href="https://www.javascript.com/">
-    <img height="50px" width="auto" src= "/public/lenguajes/js-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/js-logo.png"/>
 </a>
 <a href="https://es.react.dev/">
-    <img height="50px" width="auto" src= "/public/lenguajes/react-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/react-logo.png"/>
 </a>
 <a href="https://redux.js.org/">
-    <img height="50px" width="auto" src= "/public/lenguajes/redux-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/lenguajes/redux-logo.png"/>
 </a>
  </div>
 
@@ -79,45 +79,45 @@ Redux Toolkit
 
 Home (LogOut)<br><br>
     Desktop:<br>
-    <img src="/preview/desktop/home-logout.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/desktop/home-logout.png"><br><br>
     Movil:<br>
-    <img src="/preview/mobile/home-logout.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/home-logout.png"><br><br> 
 
 Home (LogIn)<br><br>
     Desktop:<br>
-    <img src="/preview/desktop/home-login.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/desktop/home-login.png"><br><br>
     Movil:<br>
-    <img src="/preview/mobile/home-login.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/home-login.png"><br><br> 
 
 Login<br><br>
     Desktop:<br>
-    <img src="/preview/desktop/login.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/desktop/login.png"><br><br>
     Movil:<br>
-    <img src="/preview/mobile/login.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/login.png"><br><br> 
 
 Registro<br><br>
     Desktop:<br>
-    <img src="/preview/desktop/register.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/desktop/register.png"><br><br>
     Movil:<br>
-    <img src="/preview/mobile/register.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/register.png"><br><br> 
 
 Carrito<br><br>
     Desktop:<br>
-    <img src="/preview/desktop/cart.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/desktop/cart.png"><br><br>
     Movil:<br>
-    <img src="/preview/mobile/cart.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/cart.png"><br><br> 
 
 Favoritos<br><br>
     Desktop:<br>
-    <img src="/preview/desktop/favorites.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/desktop/favorites.png"><br><br>
     Movil:<br>
-    <img src="/preview/mobile/favorites.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/favorites.png"><br><br> 
 
 Lista de usuarios<br><br>
     Desktop:<br>
-    <img src="/preview/desktop/listusers.png"><br><br>
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/desktop/listusers.png"><br><br>
     Movil:<br>
-    <img src="/preview/mobile/listusers.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/listusers.png"><br><br> 
 
 ## Licencia
 Este proyecto se encuentra bajo licencia de Álvaro Fernández Arribas

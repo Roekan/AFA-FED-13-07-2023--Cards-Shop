@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { getUser } from "./../../reducers/sliceUser/";
 import { Col, Container, Row } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
-import Logo from 'https://github.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/logo/logo.jpg'
+import Logo from '/public/images/logo/logo.jpg'
 import "./Footer.css";
 
 export const Footer = () => {

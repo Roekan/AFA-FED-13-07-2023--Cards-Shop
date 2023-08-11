@@ -4,10 +4,12 @@
   <summary>Contenido</summary>
   <ol>
     <li><a href="#objetivo">Objetivo</a></li>
+    <li><a href="#desarrollo">Sobre el proyecto</a></li>
     <li><a href="#deploy">Deploy</a></li>
     <li><a href="#stack">Stack</a></li>
     <li><a href="#libraries">Libraries</a></li>
     <li><a href="#vistas">Vistas</a></li>
+    <li><a href="#futuras-funcionalidades">Futuras funcionalidades</a></li>
     <li><a href="#licencia">Licencia</a></li>
     <li><a href="#webgrafia">Webgrafia</a></li>
     <li><a href="#agradecimientos">Agradecimientos</a></li>
@@ -17,7 +19,14 @@
 
 
 ## Objetivo 
-Este proyecto requeria hacer una página web que simulase una tienda de cartas Magic. la Api utilizada es " <a href="https://magicthegathering.io/">https://magicthegathering.io/" la cual es totalmente gratuita y en este caso no hace falta registro con API Key. 
+Este proyecto requeria hacer una página web que simulase una tienda de cartas Magic. la Api utilizada es " <a href="https://magicthegathering.io/">magicthegathering.io/"</a> la cual es totalmente gratuita y en este caso no hace falta registro con API Key. 
+  
+## Desarrollo 
+-Hemos establecido llamadas a la API <a href="https://magicthegathering.io/">https://magicthegathering.io/"</a> para obtener los productos y su informacion.
+
+-Hemos implementado un archivo JSON como base de datos donde quedan registrados tanto los usuarios registrados como los pedidos realizados por cada uno.
+
+-Hemos inplementado el Deploy en <a href="https://vercel.com/">vercel.com/"</a>
   
 ## Deploy
 <div align="center">
@@ -73,6 +82,9 @@ Redux Thunk
 <a href="https://redux-toolkit.js.org/">
 Redux Toolkit
 </a><br>
+<a href="https://www.npmjs.com/package/json-server">
+JSON Server
+</a><br>
  </div>
 
 ## Vistas
@@ -118,6 +130,11 @@ Lista de usuarios<br><br>
     <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/desktop/listusers.png"><br><br>
     Movil:<br>
     <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/listusers.png"><br><br> 
+
+## Futuras funcionalidades
+✅ MVP
+⬜ Edicion por parte de Admin de usuarios
+⬜ Registrar favoritos en el archivo JSON  
 
 ## Licencia
 Este proyecto se encuentra bajo licencia de Álvaro Fernández Arribas

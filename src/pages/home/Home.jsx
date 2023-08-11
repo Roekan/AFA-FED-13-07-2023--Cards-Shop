@@ -4,11 +4,21 @@ import { useNavigate } from "react-router-dom";
 import { addCardsMagic } from "../../reducers/cardsSlice";
 import { getUser } from "../../reducers/sliceUser";
 import { Col, Container, Row, Pagination } from "react-bootstrap";
-import "./Home.css";
 import { bringCardsByName } from "../../services/apiCalls";
 import { MagicCard } from "../../common/magicCard/MagicCard";
 import { Searcher } from "../../common/searcher/Searcher";
 import { Filter } from "../../common/filter/Filter";
+import Load1 from '/public/images/load/load-1.gif'
+import Load2 from '/public/images/load/load-2.gif'
+import Load3 from '/public/images/load/load-3.gif'
+import Load4 from '/public/images/load/load-4.gif'
+import Load5 from '/public/images/load/load-5.gif'
+import Load6 from '/public/images/load/load-6.gif'
+import Load7 from '/public/images/load/load-7.gif'
+import Load8 from '/public/images/load/load-8.gif'
+import Load9 from '/public/images/load/load-9.gif'
+import "./Home.css";
+
 
 
 export const Home = () => {
@@ -21,6 +31,19 @@ export const Home = () => {
   const [colours, setColours] = useState("b,w,u,r,g");
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
+  const [imgLoad, setImgLoad] = useState();
+  const images = {
+    1: Load1, 
+    2: Load2,
+    3: Load3,
+    4: Load4,
+    5: Load5,
+    6: Load6,
+    7: Load7,
+    8: Load8,
+    9: Load9,
+
+  }
 
   const userEmailLogin = useSelector(getUser).user.email;
   const userName = useSelector(getUser).user.name;
@@ -44,6 +67,11 @@ export const Home = () => {
   };
 
   useEffect(() => {
+
+
+    let imgValue =  Math.trunc(1 + Math.random() * 8);
+    setImgLoad(imgValue)
+
     setLoading(true);
     const bringData = setTimeout(() => {
       bringCardsByName(input, colours, page)
@@ -283,9 +311,7 @@ export const Home = () => {
               {
                 <img
                   className="rounded-4"
-                  src={`/public/images/load/load-${Math.trunc(
-                    1 + Math.random() * 8
-                  )}.gif`}
+                  src={images[imgLoad]}
                   alt="load-img"
                 />
               }

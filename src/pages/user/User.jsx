@@ -3,10 +3,12 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import "./User.css";
 import { updateUser } from "../../services/apiCalls";
 import { useSelector, useDispatch } from "react-redux";
 import { getUser, login, logout } from "../../reducers/sliceUser";
+import NoImage from "/public/images/no-image.jpg"
+import "./User.css";
+
 
 export const User = () => {
   const rdxUserData = useSelector(getUser);
@@ -391,9 +393,7 @@ export const User = () => {
                                     ) : (
                                       <img
                                         className=" img-magiccard"
-                                        src={
-                                          "/public/images/no-image.jpg"
-                                        }
+                                        src={ NoImage }
                                       />
                                     )}
                                   </Col>

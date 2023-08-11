@@ -1,20 +1,40 @@
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-// import { bringOneCard } from "../../services/apiCalls";
-import "./Detail.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { getCardsMagic } from "../../reducers/cardsSlice";
+import NotFound from '/public/images/elements/no-encontrado.png'
+import Black from '/public/images/elements/black.png'
+import Blue from '/public/images/elements/blue.png'
+import Green from '/public/images/elements/green.png'
+import Red from '/public/images/elements/red.png'
+import White from '/public/images/elements/white.png'
+import NoImage from "/public/images/no-image.jpg"
+import Load1 from '/public/images/load/load-1.gif'
+import Load2 from '/public/images/load/load-2.gif'
+import Load3 from '/public/images/load/load-3.gif'
+import Load4 from '/public/images/load/load-4.gif'
+import Load5 from '/public/images/load/load-5.gif'
+import Load6 from '/public/images/load/load-6.gif'
+import Load7 from '/public/images/load/load-7.gif'
+import Load8 from '/public/images/load/load-8.gif'
+import Load9 from '/public/images/load/load-9.gif'
+
+import "./Detail.css";
+
 
 export const Detail = () => {
   const id = useParams().id;
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [card, setCard] = useState(null);
+  const [imgLoad, setImgLoad] = useState();
 
   let cards = useSelector(getCardsMagic);
 
   useEffect(() => {
+    let imgValue =  Math.trunc(1 + Math.random() * 8);
+    setImgLoad(imgValue)
     setLoading(true);
     setCard(cards.cardsMagic.find((card) => card.id === id));
     setLoading(false);
@@ -77,37 +97,37 @@ export const Detail = () => {
                             {color == "W" && (
                               <img
                                 className="img-color-magiccard"
-                                src="/public/images/elements/white.png"
+                                src={White}
                               />
                             )}
                             {color == "U" && (
                               <img
                                 className="img-color-magiccard"
-                                src="/public/images/elements/blue.png"
+                                src={Blue}
                               />
                             )}
                             {color == "G" && (
                               <img
                                 className="img-color-magiccard"
-                                src="/public/images/elements/green.png"
+                                src={Green}
                               />
                             )}
                             {color == "B" && (
                               <img
                                 className="img-color-magiccard"
-                                src="/public/images/elements/black.png"
+                                src={Black}
                               />
                             )}
                             {color == "R" && (
                               <img
                                 className="img-color-magiccard"
-                                src="/public/images/elements/red.png"
+                                src={Red}
                               />
                             )}
                             {color == "" && (
                               <img
                                 className="img-color-magiccard"
-                                src="/public/images/elements/no-encontrado.png"
+                                src={NotFound}
                               />
                             )}
                           </div>
@@ -155,7 +175,7 @@ export const Detail = () => {
                       src={
                         card.imageUrl
                           ? card.imageUrl
-                          : "./../../public/images/no-image.jpg"
+                          : {NoImage}
                       }
                       alt=""
                     />
@@ -186,35 +206,35 @@ export const Detail = () => {
                         {character == "W" && (
                           <img
                             className=" img-color-magiccard"
-                            src="/public/images/elements/white.png"
+                            src={White}
                             alt=""
                           />
                         )}
                         {character == "B" && (
                           <img
                             className=" img-color-magiccard"
-                            src="/public/images/elements/black.png"
+                            src={Black}
                             alt=""
                           />
                         )}
                         {character == "U" && (
                           <img
                             className=" img-color-magiccard"
-                            src="/public/images/elements/blue.png"
+                            src={Blue}
                             alt=""
                           />
                         )}
                         {character == "R" && (
                           <img
                             className=" img-color-magiccard"
-                            src="/public/images/elements/red.png"
+                            src={Red}
                             alt=""
                           />
                         )}
                         {character == "G" && (
                           <img
                             className=" img-color-magiccard"
-                            src="/public/images/elements/green.png"
+                            src={Green}
                             alt=""
                           />
                         )}
@@ -276,9 +296,7 @@ export const Detail = () => {
               {
                 <img
                   className="rounded-4"
-                  src={`/public/images/load/load-${Math.trunc(
-                    1 + Math.random() * 8
-                  )}.gif`}
+                  src={images[imgLoad]}
                   alt="load-img"
                 />
               }

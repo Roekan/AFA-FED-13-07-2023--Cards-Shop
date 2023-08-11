@@ -13,6 +13,12 @@ import {
   getProducts,
 } from "./../../reducers/sliceCart/";
 import { getUser } from "./../../reducers/sliceUser/";
+import NoImage from "/public/images/no-image.jpg"
+import Black from '/public/images/elements/black.png'
+import Blue from '/public/images/elements/blue.png'
+import Green from '/public/images/elements/green.png'
+import Red from '/public/images/elements/red.png'
+import White from '/public/images/elements/white.png'
 import "./MagicCard.css";
 
 export const MagicCard = ({
@@ -79,7 +85,7 @@ export const MagicCard = ({
                 <Card.Img
                   className="img-magiccard"
                   variant="top"
-                  src={"/public/images/no-image.jpg"}
+                  src={NoImage}
                 />
               )}
             </Col>
@@ -101,31 +107,31 @@ export const MagicCard = ({
                         {color == "W" && (
                           <img
                             className="img-color-magiccard"
-                            src="/public/images/elements/white.png"
+                            src={White}
                           />
                         )}
                         {color == "U" && (
                           <img
                             className="img-color-magiccard"
-                            src="/public/images/elements/blue.png"
+                            src={Blue}
                           />
                         )}
                         {color == "G" && (
                           <img
                             className="img-color-magiccard"
-                            src="/public/images/elements/green.png"
+                            src={Green}
                           />
                         )}
                         {color == "B" && (
                           <img
                             className="img-color-magiccard"
-                            src="/public/images/elements/black.png"
+                            src={Black}
                           />
                         )}
                         {color == "R" && (
                           <img
                             className="img-color-magiccard"
-                            src="/public/images/elements/red.png"
+                            src={Red}
                           />
                         )}
                       </div>

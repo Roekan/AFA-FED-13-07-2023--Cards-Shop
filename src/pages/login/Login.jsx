@@ -84,7 +84,7 @@ export const Login = () => {
           >
             <p>
               Si aun no estas registrado puedes registrarte desde &nbsp;
-              <Link className="" to="/register" alt="Usuario">
+              <Link to="/register" alt="Usuario">
                 aquí
               </Link>
             </p>

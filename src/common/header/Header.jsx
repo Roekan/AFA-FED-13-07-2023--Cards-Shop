@@ -22,7 +22,9 @@ console.log(userPurchases)
       <Navbar collapseOnSelect expand="lg" className="bg-header header-sticky">
         <Container>
           <Navbar.Brand to="/">
+            <Link to="/">
             <img className='logo-header' src={Logo} width={70} />
+            </Link>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav menu-mobile" />

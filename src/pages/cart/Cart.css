@@ -8,6 +8,22 @@
     color: #999;
 }
 
+.modal-content{
+    background: none;
+}
+
+.cart-modal-msg{
+    margin-top: 25%;
+    
+}
+
+.box-title-modal-msg{
+    background-color: #006633;
+    color: #e49604;
+    border: 2px solid #e49604;
+    border-radius: 2rem;
+}
+
 .not-found-cart{
     color: #e49604;
 }

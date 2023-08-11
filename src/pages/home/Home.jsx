@@ -102,7 +102,6 @@ export const Home = () => {
           </Col>
         </Row>
       </Container>
-
       {!loading && cards && cards.length<=0 && (
         <>
           <Container
@@ -185,15 +184,15 @@ export const Home = () => {
         <>
           <Container
             fluid
-            className="d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-cards-home"
+            className="d-flex align-items-center justify-content-center flex-column bg-dark py-1 box-cards-home flip-vertical-right"
           >
-            <Row >
+            <Row className="wrapper">
               {cards &&
                 cards.map((card) => {
                   return (
                     <Col
                       key={card.id}
-                      className="rounded-2 my-2 d-flex align-items-center justify-content-center box-card-home"
+                      className="rounded-2 my-2 d-flex align-items-center justify-content-center  flip-vertical-right"
                     >
                       <MagicCard
                         id={card.id}

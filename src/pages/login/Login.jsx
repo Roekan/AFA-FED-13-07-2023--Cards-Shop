@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../reducers/sliceUser";
 import './Login.css'
+import { Potion } from "../../common/potion/Potion";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -72,7 +73,8 @@ export const Login = () => {
   return (
     <>
       <Container className="pt-5 box-login-home">
-        <Row className="d-flex align-items-center justify-content-center">
+      <Potion />
+        <Row className="d-flex align-items-center justify-content-center mt-3">
           <Col
             className="d-flex justify-content-center text-login"
             sm={12}
@@ -143,6 +145,7 @@ export const Login = () => {
             </Button>
           </Col>
         </Row>
+        
       </Container>
     </>
   );

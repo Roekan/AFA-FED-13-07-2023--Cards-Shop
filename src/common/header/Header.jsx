@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { getUser } from "./../../reducers/sliceUser";
 import { getFavorites } from "./../../reducers/sliceFavorites";
 import { getProducts } from "./../../reducers/sliceCart";
-import Logo from './../../../public/images/logo/logo.png'
+import Logo from 'https://github.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/blob/master/public/images/logo/logo.jpg'
 
 
 export const Header = () => {

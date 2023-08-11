@@ -1,9 +1,10 @@
 import  { useState } from "react";
+import React from 'react'
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { users } from "../../services/apiCalls";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../reducers/sliceUser";
 import './Login.css'
@@ -83,9 +84,9 @@ export const Login = () => {
           >
             <p>
               Si aun no estas registrado puedes registrarte desde &nbsp;
-              <a className="" href="/register" alt="Usuario">
+              <Link className="" to="/register" alt="Usuario">
                 aquí
-              </a>
+              </Link>
             </p>
           </Col>
         </Row>

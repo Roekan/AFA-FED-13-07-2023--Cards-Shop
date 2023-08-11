@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -88,9 +89,9 @@ export const Register = () => {
             >
               <p>
                 Si ya estas registrado puedes loguearte desde &nbsp;
-                <a className="" href="/login" alt="Usuario">
+                <Link  to="/login" alt="Usuario">
                   aquí
-                </a>
+                </Link>
               </p>
             </Col>
           </Row>

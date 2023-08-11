@@ -1,6 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import { Container, Form, Row, Col } from 'react-bootstrap'
 import './Filter.css'
+import Black from '/public/images/elements/black.png'
+import Blue from '/public/images/elements/blue.png'
+import Green from '/public/images/elements/green.png'
+import Red from '/public/images/elements/red.png'
+import White from '/public/images/elements/white.png'
+import NotFound from '/public/images/elements/no-enontrado.png'
 
 export const Filter = ({changeColours}) => {
 
@@ -34,7 +40,7 @@ useEffect(()=>{
                     id="b"
                     defaultChecked={true}
                 />
-                <img src='/public/images/elements/black.png' width={20} />
+                <img src={Black} width={20} />
                 </Col>
                 <Col sm={12} md={2} className='d-flex align-items-center justify-content-center filter-white'>
                 <Form.Check 
@@ -45,7 +51,7 @@ useEffect(()=>{
                     id="w"
                     defaultChecked={true}
                 />
-                <img src='/public/images/elements/white.png' width={20} />
+                <img src={White} width={20} />
                 </Col>
                 <Col sm={12} md={2} className='d-flex align-items-center justify-content-center filter-blue'>
                 <Form.Check 
@@ -56,7 +62,7 @@ useEffect(()=>{
                     id="u"
                     defaultChecked={true}
                 />
-                <img src='/public/images/elements/blue.png' width={20} />
+                <img src={Blue} width={20} />
                 </Col>
                 <Col sm={12} md={2} className='d-flex align-items-center justify-content-center filter-red'>
                 <Form.Check 
@@ -67,7 +73,7 @@ useEffect(()=>{
                     id="r"
                     defaultChecked={true}
                 />
-                <img src='/public/images/elements/red.png' width={20} />
+                <img src={Red} width={20} />
                 </Col>
                 <Col sm={12} md={2} className='d-flex align-items-center justify-content-center filter-green'>
                 <Form.Check 
@@ -78,7 +84,7 @@ useEffect(()=>{
                     id="g"
                     defaultChecked={true}
                 />
-                <img src='/public/images/elements/green.png' width={20} />
+                <img src={Green} width={20} />
                 </Col>
             </Row>
         </Container>

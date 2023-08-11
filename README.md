@@ -132,9 +132,9 @@ Lista de usuarios<br><br>
     <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/listusers.png"><br><br> 
 
 ## Futuras funcionalidades
-✅ MVP
-⬜ Edicion por parte de Admin de usuarios
-⬜ Registrar favoritos en el archivo JSON  
+✅ MVP<br>
+⬜ Edicion por parte de Admin de usuarios<br>
+⬜ Registrar favoritos en el archivo JSON<br>
 
 ## Licencia
 Este proyecto se encuentra bajo licencia de Álvaro Fernández Arribas

@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { getUser } from "./../../reducers/sliceUser";
 import { getFavorites } from "./../../reducers/sliceFavorites";
 import { getProducts } from "./../../reducers/sliceCart";
-
+import Logo from './../../public/images/logo/logo.png'
 
 
 export const Header = () => {
@@ -22,7 +22,7 @@ console.log(userPurchases)
       <Navbar collapseOnSelect expand="lg" className="bg-header header-sticky">
         <Container>
           <Navbar.Brand href="/">
-            <img className='logo-header' src='./../../public/images/logo/logo.png' width={70} />
+            <img className='logo-header' src={Logo} width={70} />
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav menu-mobile" />

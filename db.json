@@ -4584,6 +4584,23 @@
         }
       ],
       "id": 2
+    },
+    {
+      "type": "user",
+      "name": "User1",
+      "lastname": "LastUser1",
+      "email": "user1@user1.com",
+      "password": "Abcd1234",
+      "passwordVerification": "Abcd1234",
+      "phone": "798899562",
+      "adress": "Calle Falsa",
+      "door": "123",
+      "floor": "1º",
+      "adressCode": "28900",
+      "city": "Murcia",
+      "favorites": [],
+      "purchases": [],
+      "id": 3
     }
   ]
 }

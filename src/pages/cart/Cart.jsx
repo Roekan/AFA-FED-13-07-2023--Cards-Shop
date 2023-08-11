@@ -85,7 +85,7 @@ export const Cart = () => {
 
           {products.length <= 0 && (
             <Col className="my-2 d-flex align-items-center justify-content-center not-found-cart">
-              <h2>Aún no se ha añadido ningun producto al carrito</h2>
+              <h2>No se ha añadido ningun producto al carrito</h2>
             </Col>
           )}
         </Row>

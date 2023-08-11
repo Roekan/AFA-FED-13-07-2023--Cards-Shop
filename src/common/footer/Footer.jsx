@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { getUser } from "./../../reducers/sliceUser/";
 import { Col, Container, Row } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
+import Logo from './../../public/images/logo/logo.png'
 import "./Footer.css";
 
 export const Footer = () => {
@@ -141,7 +142,7 @@ export const Footer = () => {
                 >
                   <img
                     className=" logo-footer"
-                    src="./../../public/images/logo/logo.png"
+                    src={Logo}
                     width={40}
                   />
                 </Col>

@@ -113,7 +113,7 @@ export const Register = () => {
                   aria-label="Nombre"
                   aria-describedby="Nombre"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   Debe introducir un nombre
                 </Form.Control.Feedback>
               </InputGroup>
@@ -151,7 +151,7 @@ export const Register = () => {
                   aria-label="Email"
                   aria-describedby="Email"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   {registerEmail
                     ? "Este email ya está registrado"
                     : "Debe introducir un email válido (ejemplo@ejemplo.com)"}
@@ -174,7 +174,7 @@ export const Register = () => {
                   aria-label="Contraseña"
                   aria-describedby="Contraseña"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   Debe introducir una contraseña válida (al menos 1 mayúscula, 1
                   minúscula y 1 número)
                 </Form.Control.Feedback>
@@ -206,7 +206,7 @@ export const Register = () => {
                   aria-label="Confirmar email"
                   aria-describedby="Confirmar email"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   Las contraseñas deben ser iguales
                 </Form.Control.Feedback>
               </InputGroup>
@@ -227,7 +227,7 @@ export const Register = () => {
                   aria-label="Teléfono"
                   aria-describedby="Teléfono"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   Debe introducir un teléfono válido
                 </Form.Control.Feedback>
               </InputGroup>
@@ -247,7 +247,7 @@ export const Register = () => {
                   aria-label="Dirección"
                   aria-describedby="Dirección"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   Debe introducir una dirección
                 </Form.Control.Feedback>
               </InputGroup>
@@ -267,7 +267,7 @@ export const Register = () => {
                   aria-label="Portal"
                   aria-describedby="Portal"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   Debe introducir un portal
                 </Form.Control.Feedback>
               </InputGroup>
@@ -287,7 +287,7 @@ export const Register = () => {
                   aria-label="Piso"
                   aria-describedby="Piso"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   Debe introducir un piso
                 </Form.Control.Feedback>
               </InputGroup>
@@ -311,7 +311,7 @@ export const Register = () => {
                   aria-label="Código postal"
                   aria-describedby="Código postal"
                 />
-                <Form.Control.Feedback type="invalid">
+                <Form.Control.Feedback className="register-msg-error" type="invalid">
                   Debe introducir un código postal válido
                 </Form.Control.Feedback>
               </InputGroup>

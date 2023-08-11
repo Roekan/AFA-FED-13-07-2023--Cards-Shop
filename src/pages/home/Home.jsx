@@ -217,10 +217,12 @@ export const Home = () => {
             <Row className="wrapper">
               {cards &&
                 cards.map((card) => {
+
+                  setTimeout
                   return (
                     <Col
                       key={card.id}
-                      className="rounded-2 my-2 d-flex align-items-center justify-content-center  flip-vertical-right"
+                      className="rounded-2 my-2 d-flex align-items-center justify-content-center home-card"
                     >
                       <MagicCard
                         id={card.id}

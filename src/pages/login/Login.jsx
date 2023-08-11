@@ -35,7 +35,7 @@ export const Login = () => {
           setMsgUserNotFound(
             <Row className="d-flex align-items-center justify-content-center">
               <Col
-                className="d-flex align-items-center justify-content-center py-4 msgUserNotFound"
+                className="d-flex align-items-center justify-content-center py-4 msgUser "
                 sm={12}
                 md={10}
                 lg={6}
@@ -51,7 +51,7 @@ export const Login = () => {
           setMsgUserNotFound(
             <Row className="d-flex align-items-center justify-content-center">
               <Col
-                className="d-flex align-items-center justify-content-center py-4 msgUserNotFound"
+                className="d-flex align-items-center justify-content-center py-4 msgUser register-msg-error"
                 sm={12}
                 md={10}
                 lg={6}

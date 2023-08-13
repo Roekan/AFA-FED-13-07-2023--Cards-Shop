@@ -29,7 +29,18 @@ export const Detail = () => {
   const [loading, setLoading] = useState(false);
   const [card, setCard] = useState(null);
   const [imgLoad, setImgLoad] = useState();
-
+  const images = {
+    1: Load1, 
+    2: Load2,
+    3: Load3,
+    4: Load4,
+    5: Load5,
+    6: Load6,
+    7: Load7,
+    8: Load8,
+    9: Load9,
+  }
+  
   let cards = useSelector(getCardsMagic);
 
   useEffect(() => {
@@ -175,7 +186,7 @@ export const Detail = () => {
                       src={
                         card.imageUrl
                           ? card.imageUrl
-                          : {NoImage}
+                          : NoImage
                       }
                       alt=""
                     />

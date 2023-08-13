@@ -9,7 +9,7 @@
     <li><a href="#stack">Stack</a></li>
     <li><a href="#libraries">Libraries</a></li>
     <li><a href="#vistas">Vistas</a></li>
-    <li><a href="#futuras-funcionalidades">Futuras funcionalidades</a></li>
+    <li><a href="#funcionalidades">Futuras funcionalidades</a></li>
     <li><a href="#licencia">Licencia</a></li>
     <li><a href="#webgrafia">Webgrafia</a></li>
     <li><a href="#agradecimientos">Agradecimientos</a></li>
@@ -131,10 +131,15 @@ Lista de usuarios<br><br>
     Movil:<br>
     <img src="https://raw.githubusercontent.com/Roekan/AFA-FED-13-07-2023--Cards-Shop/master/public/images/preview/mobile/listusers.png"><br><br> 
 
+
 ## Futuras funcionalidades
-✅ MVP
-⬜ Edicion por parte de Admin de usuarios
-⬜ Registrar favoritos en el archivo JSON  
+
+-✅ MVP 
+-⬜ Registrar favoritos en el archivo JSON 
+-⬜ Edicion por parte de Admin de usuarios 
+
+
+
 
 ## Licencia
 Este proyecto se encuentra bajo licencia de Álvaro Fernández Arribas

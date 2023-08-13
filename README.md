@@ -138,9 +138,6 @@ Lista de usuarios<br><br>
 -⬜ Registrar favoritos en el archivo JSON 
 -⬜ Edicion por parte de Admin de usuarios 
 
-
-
-
 ## Licencia
 Este proyecto se encuentra bajo licencia de Álvaro Fernández Arribas
 

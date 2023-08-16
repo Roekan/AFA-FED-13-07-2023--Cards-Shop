@@ -20,11 +20,11 @@ export const bringCardsByName = async(name,colors, page)=>{
 }
 
 export const register = async (body) => {
-    let { data } = await axios.post(`${API_URL}/users`, body);
+    let { data } = await axios.post(`https://json-server-vercel-template.vercel.app/users`, body);
     return data;
 }
 export const users = async () => {
-    let { data } = await axios.get(`${API_URL}/users`);
+    let { data } = await axios.get(`https://json-server-vercel-template.vercel.app/users`);
     return data;
 }
 export const user = async (id) => {
@@ -37,6 +37,6 @@ export const user = async (id) => {
     return data;
 }
 export const updateUser = async (user) => {
-    let { data } = await axios.put(`${API_URL}/users/${user.id}`, user);
+    let { data } = await axios.put(`https://json-server-vercel-template.vercel.app/users/${user.id}`, user);
     return data;
 }

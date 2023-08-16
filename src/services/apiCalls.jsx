@@ -2,7 +2,7 @@ import axios from "axios";
 
 const cards = 'https://api.magicthegathering.io/v1/cards'
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://json-server-vercel-template.vercel.app/";
 
 
 

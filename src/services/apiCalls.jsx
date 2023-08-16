@@ -28,7 +28,7 @@ export const users = async () => {
     return data;
 }
 export const user = async (id) => {
-    let { data } = await axios.get(`${API_URL}users/${id}`, {headers:{
+    let { data } = await axios.get(`https://json-server-vercel-template.vercel.app/users/${id}`, {headers:{
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': '*',
         'Access-Control-Allow-Methods': '*',

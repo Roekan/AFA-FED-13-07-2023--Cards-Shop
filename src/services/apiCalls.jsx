@@ -1,7 +1,7 @@
 import axios from "axios";
 
-axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
-axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
+// axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
+// axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
 
 const cards = 'https://api.magicthegathering.io/v1/cards'
 
@@ -28,7 +28,9 @@ export const users = async () => {
     return data;
 }
 export const user = async (id) => {
-    let { data } = await axios.get(`${API_URL}/users/${id}`);
+    let { data } = await axios.get(`${API_URL}/users/${id}`, {headers:{
+        'Access-Control-Allow-Origin': true
+    }});
     return data;
 }
 export const updateUser = async (user) => {

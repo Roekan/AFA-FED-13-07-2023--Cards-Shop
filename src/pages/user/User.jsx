@@ -46,6 +46,7 @@ export const User = () => {
       })
       .catch((error) => {
         console.log(error);
+        dispatch(login({ user: userData }));
       });
   };
 

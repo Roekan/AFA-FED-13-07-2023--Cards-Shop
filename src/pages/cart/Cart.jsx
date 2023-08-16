@@ -39,6 +39,10 @@ export const Cart = () => {
       })
       .catch((error) => {
         console.log(error);
+        setShow(true)
+        setTimeout(() => {
+        setShow(false);
+        }, 5000);
       });
     dispatch(deleteAllProducs());
   };

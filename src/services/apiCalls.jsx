@@ -29,7 +29,9 @@ export const users = async () => {
 }
 export const user = async (id) => {
     let { data } = await axios.get(`${API_URL}/users/${id}`, {headers:{
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': '*',
+        'Access-Control-Allow-Methods': '*'
     }});
     return data;
 }

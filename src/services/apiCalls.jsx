@@ -1,5 +1,8 @@
 import axios from "axios";
 
+axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
+
 const cards = 'https://api.magicthegathering.io/v1/cards'
 
 const API_URL = "https://json-server-vercel-template.vercel.app/";

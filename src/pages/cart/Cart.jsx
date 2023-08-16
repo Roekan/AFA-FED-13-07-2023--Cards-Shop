@@ -88,7 +88,7 @@ export const Cart = () => {
         </Row>
         <Row className="d-flex align-items-top justify-content-center py-3">
           <Col className="d-flex align-items-top justify-content-center">
-            {products.length && (
+            {products.length>0 && (
               <Button
                 className="btn-purchase-cart"
                 variant="outline-light"
